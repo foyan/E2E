@@ -49,11 +49,17 @@
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+
 %%% END Article customizations
 
 %%% The "real" document content comes below...
 
-\title{IT Service Management: End-to-end measurement Vertiefung}
+\title{IT Service Management: End-to-end-Überwachung}
 \author{Florian Lüthi}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -63,12 +69,39 @@
 
 \chapter{Management Summary}
 
-\chapter{Bla}
+\chapter{Einführung}
 
-\chapter{Blu}
+\section{Kontext und Definitionen}
 
-\chapter{Blo}
+\begin{definition}[Business Service Management (BSM)]
+Das Modell des Business Service Management verknüpft die Geschäftsprozesse eines Unternehmens mit den darunterliegenden IT-Services. Dadurch ist es möglich, die Abhängigkeiten von Business zu IT darzustellen, sowie die Auswirkungen von IT-Störungen auf das Business aufzuzeigen. Das Ziel von Business Service Management ist, eine bessere Abstimmung zwischen Business und IT zu erzielen. \cite{wiki:bsm}
+\end{definition}
 
-\chapter{Blarp}
+BSM startete ungefähr im Jahr 2003 als Buzzword, bis sich Forrester Research 2006 dem Thema annahm und begann, darüber zu publizieren. \cite{wiki:bsm, forrester:bsm, forrester:implementingBsm}
+
+\section{Fragestellungen}
+
+\subsection{Transparenz versus Transformabilität}
+
+\subsection{Skalierbarkeit nach unten}
+
+\chapter{Lösungsansätze}
+
+\section{Neue Techniken}
+
+\section{SLAs für E2E-Services}
+
+\subsection{Metriken und KPIs}
+
+\subsection{WSLAs (Web Service Level Agreements)}
+
+\section{Gestaltung von IT-Leistungskatalogen mit E2E}
+
+\section{Outsourcing: Auswirkungen von E2E}
+
+\chapter{Fazit}
+
+\bibliography{Referenzen}
+\bibliographystyle{plain}
 
 \end{document}

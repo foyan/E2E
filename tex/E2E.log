@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  9 FEB 2013 14:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  11 FEB 2013 13:35
 entering extended mode
-**E2E.tex
-(C:\Code\E2E\tex\E2E.tex
+**C:/Code/E2E/tex/E2E.tex
+(C:/Code/E2E/tex/E2E.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -529,19 +529,33 @@ Package tocloft Info: The document has chapter divisions on input line 43.
 \cftbeforesubtabskip=\skip104
 \cftsubtabindent=\skip105
 \cftsubtabnumwidth=\skip106
-) (C:\Code\E2E\tex\E2E.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+) ("C:\Programme\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip107
+\thm@postskip=\skip108
+\thm@headsep=\skip109
+\dth@everypar=\toks27
+)
+\c@definition=\count105
+
+(C:\Code\E2E\tex\E2E.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -581,25 +595,25 @@ LaTeX Font Info:    ... okay on input line 61.
 ("C:\Dokumente und Einstellungen\flo\Anwendungsdaten\MiKTeX\2.9\tex\context\bas
 e\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
+\scratchcounter=\count106
 \scratchdimen=\dimen135
 \scratchbox=\box27
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count108
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count109
 \MPscratchDim=\dimen136
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks29
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 63.
+(Font)              <14.4> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 63.
+(Font)              <7> on input line 69.
  [1
 
 
@@ -619,28 +633,28 @@ Chapter 3.
 
 ]
 Chapter 4.
-[5
+(C:\Code\E2E\tex\E2E.bbl [5
 
-]
-Chapter 5.
-[6
+]) [6
 
 ] (C:\Code\E2E\tex\E2E.aux) ) 
 Here is how much of TeX's memory you used:
- 4893 strings out of 494045
- 75862 string characters out of 3149938
- 164846 words of memory out of 3000000
- 8148 multiletter control sequences out of 15000+200000
- 6351 words of font info for 23 fonts, out of 3000000 for 9000
+ 5016 strings out of 494045
+ 77370 string characters out of 3149938
+ 167130 words of memory out of 3000000
+ 8262 multiletter control sequences out of 15000+200000
+ 8159 words of font info for 29 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 50i,7n,54p,217b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,7n,54p,444b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.p
-fb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Progr
-amme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on E2E.pdf (6 pages, 45222 bytes).
+ts/cm/cmbx10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+amme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Programme/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Programme/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmssbx10.pfb>
+Output written on E2E.pdf (6 pages, 84639 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
