@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  11 FEB 2013 21:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  11 FEB 2013 21:38
 entering extended mode
 **C:/Code/E2E/tex/E2E.tex
 (C:/Code/E2E/tex/E2E.tex
@@ -653,7 +653,7 @@ Kapitel 3.
 [5
 
 ]
-Overfull \hbox (1.82285pt too wide) in paragraph at lines 141--142
+Overfull \hbox (1.82285pt too wide) in paragraph at lines 143--144
 []\OT1/cmr/m/n/10.95 Praktisch s[]amt-li-che Un-ter-neh-men ha-ben
  []
 
@@ -673,14 +673,26 @@ Underfull \hbox (badness 1817) in paragraph at lines 43--50
 . org / w / index . php ? title = Business _ Service _$
  []
 
+
+Underfull \hbox (badness 3039) in paragraph at lines 52--59
+[]\OT1/cmr/m/n/10.95 Wikipedia.  Web Ser-vices De-s-crip-ti-on Lan-gua-ge --- W
+i-ki-pe-dia, The Free
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 52--59
+\OT1/cmr/m/n/10.95 En-cy-clo-pe-dia.  $\OT1/cmtt/m/n/10.95 http : / / en . wiki
+pedia . org / w / index . php ? title = Web _ Services _$
+ []
+
 ) [8
 
 ] (C:\Code\E2E\tex\E2E.aux) ) 
 Here is how much of TeX's memory you used:
- 5312 strings out of 494045
- 81090 string characters out of 3149938
- 173515 words of memory out of 3000000
- 8539 multiletter control sequences out of 15000+200000
+ 5313 strings out of 494045
+ 81101 string characters out of 3149938
+ 173518 words of memory out of 3000000
+ 8540 multiletter control sequences out of 15000+200000
  11112 words of font info for 39 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  50i,10n,54p,444b,268s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -692,7 +704,7 @@ amme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Programme/MiKTeX
 pe1/public/amsfonts/cm/cmssbx10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmti10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb>
-Output written on E2E.pdf (8 pages, 131026 bytes).
+Output written on E2E.pdf (8 pages, 131957 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
