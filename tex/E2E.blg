@@ -6,4 +6,10 @@ I was expecting a `,' or a `}'---line 41 of file Referenzen.bib
  :    year = "2003",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-(There was 1 error message)
+I was expecting a `,' or a `}'---line 54 of file Referenzen.bib
+ :    
+ :    publisher={Plenum Publishing Corporation}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--there's a month but no year in ibm:wslaPaper
+(There were 2 error messages)

@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{ibm:wslaPaper}
+{Alexander Keller und Heiko Ludwig}.
+\newblock {The WSLA Framework: Specifying and Monitoring Service Level
+  Agreements for Web Services}.
+\newblock {\em {Journal of Network and Systems Management}}, 11(1), November
+  2003.
+
 \bibitem{EllisKauferstein200311}
 {Avy Ellis und Michael Kauferstein}.
 \newblock {\em {Dienstleistungsmanagement: Erfolgreicher Einsatz von
@@ -39,6 +46,13 @@ Wikipedia.
 \newblock
   \url{http://de.wikipedia.org/w/index.php?title=Business_Service_Management&oldid=96861954},
   2011.
+\newblock [Online; Stand 11. Februar 2013].
+
+\bibitem{wiki:soap}
+Wikipedia.
+\newblock {SOAP --- Wikipedia{,} The Free Encyclopedia}.
+\newblock \url{http://en.wikipedia.org/w/index.php?title=SOAP&oldid=535478625},
+  2013.
 \newblock [Online; Stand 11. Februar 2013].
 
 \end{thebibliography}
