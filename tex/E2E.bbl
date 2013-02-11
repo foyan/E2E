@@ -1,18 +1,43 @@
 \begin{thebibliography}{1}
 
+\bibitem{EllisKauferstein200311}
+{Avy Ellis und Michael Kauferstein}.
+\newblock {\em {Dienstleistungsmanagement: Erfolgreicher Einsatz von
+  prozessorientiertem Service Level Management (German Edition)}}.
+\newblock Springer, 2004 edition, 11 2003.
+
+\bibitem{ibm:wslaSpec}
+{Heiko Ludwig et al.}
+\newblock {Web Service Level Agreement (WSLA) Language Specification}.
+
+\bibitem{forrester:slaBestPractices}
+{Jean-Pierre Garbani}.
+\newblock {Best Practices For Service-Level Management}.
+\newblock \url{http://i.zdnet.com/whitepapers/Forr051103489400.pdf}, 2004.
+\newblock [Online; Stand 11. Februar 2013].
+
 \bibitem{forrester:bsm}
-Thomas Mendel et~al. Peter~O'Neill.
-\newblock Bsm is coming of age: Time to define what it is, 2006.
+{Peter O'Neill, Thomas Mendel et al.}
+\newblock {BSM Is Coming Of Age: Time To Define What It Is}.
+\newblock
+  \url{http://www.ktsl.com/downloads/forrester_bsm_definition_whitepaper.pdf},
+  2006.
 \newblock [Online; Stand 11. Februar 2013].
 
 \bibitem{forrester:implementingBsm}
-Peter O'Neill et~al. Thomas~Mendel.
-\newblock Implementing bsm, 2006.
+{Thomas Mendel, Peter O'Neill et al.}
+\newblock {Implementing BSM}.
+\newblock
+  \url{http://www.ktsl.com/downloads/forrester_bsm_definition_whitepaper.pdf},
+  2006.
 \newblock [Online; Stand 11. Februar 2013].
 
 \bibitem{wiki:bsm}
 Wikipedia.
-\newblock Business service management --- wikipedia{,} die freie enzyklopädie,
+\newblock {Business Service Management --- Wikipedia{,} Die freie
+  Enzyklopädie}.
+\newblock
+  \url{http://de.wikipedia.org/w/index.php?title=Business_Service_Management&oldid=96861954},
   2011.
 \newblock [Online; Stand 11. Februar 2013].
 

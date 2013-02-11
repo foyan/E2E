@@ -7,6 +7,7 @@
 \documentclass[11pt]{scrreprt} % use larger type; default would be 10pt
 
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{german}
 
 %%% Examples of Article customizations
 % These packages are optional, depending whether you want the features they provide.
@@ -20,6 +21,7 @@
 %   read geometry.pdf for detailed page layout information
 
 \usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{url}
 
 % \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
 
@@ -67,6 +69,8 @@
 \begin{document}
 \maketitle
 
+\tableofcontents
+
 \chapter{Management Summary}
 
 \chapter{Einführung}
@@ -78,6 +82,10 @@ Das Modell des Business Service Management verknüpft die Geschäftsprozesse ein
 \end{definition}
 
 BSM startete ungefähr im Jahr 2003 als Buzzword, bis sich Forrester Research 2006 dem Thema annahm und begann, darüber zu publizieren. \cite{wiki:bsm, forrester:bsm, forrester:implementingBsm}
+
+\begin{definition}[End-to-End-Monitoring]
+Bla,.
+\end{definition}
 
 \section{Fragestellungen}
 
@@ -91,13 +99,42 @@ BSM startete ungefähr im Jahr 2003 als Buzzword, bis sich Forrester Research 20
 
 \section{SLAs für E2E-Services}
 
+Bla. \cite{EllisKauferstein200311}
+
 \subsection{Metriken und KPIs}
 
+Metriken... Blah... \cite{forrester:slaBestPractices}
+
+\begin{enumerate}
+\item Die Metrik ist objektiv messbar.
+\item Die Metrik enthält eine klare Aussage über das erwartete Resultat.
+\item Die Metrik unterstützt Business-seitige Anforderungen.
+\item Die Metrik konzentriert sich entweder auf die Effektivität oder die Effizienz des zu messenden Prozesses.
+\item Die Metrik erlaubt eine sinnvolle statistische oder Trend-Analyse.
+\item Die Metrik wendet Industrie- und/oder andere Standards an.
+\item Annahmen und Definitionen für zufriedenstellende Performance wird spezifiziert.
+\item In die Festlegung der Metrik wurden diejenigen Stakeholder involviert, die nachher für die Performance des Prozesses verantwortlich sind.
+\item Sowohl der Dienstleister wie auch der Abnehmer akzeptieren die Metrik.
+\end{enumerate}
+
 \subsection{WSLAs (Web Service Level Agreements)}
+
+IBM Bla \cite{ibm:wslaSpec}
 
 \section{Gestaltung von IT-Leistungskatalogen mit E2E}
 
 \section{Outsourcing: Auswirkungen von E2E}
+
+Die Weiterentwicklung der Fähigkeiten der IT im Generellen hat viele neue Möglichkeiten gebracht, wie IT das Business direkt unterstützen und zur Wertschöpfungskette beitragen kann. Gemäss Forrester (\cite{forrester:slaBestPractices}) zeitigen sich daraus allerdings zwei sich widersprechende Effekte:
+
+\begin{description}
+\item[Die IT-Abhängigkeit des Business nimmt zu.] Praktisch sämtliche Unternehmen haben einen Punkt erreicht, an dem ihre Business-Prozesse so abhängig von einer funktionierenden IT sind wie von Elektrizät und fliessendem Wasser.
+\item[Der Kostendruck auf die IT nimmt zu.] Externe Dienstleister haben für die Mehrheit der IT-Geschäftsfelder Lösungen entwickelt, die direkt mit den Dienstleistungen der internen IT-Abteilungen konkurrenzieren können. Gemäss der Logik des Marktes resultieren daraus sinkende Preise und steigende Qualität.
+\end{description}
+
+Die interne IT kann sich nun entweder dieses Konkurrenz- und Kostendrucks annehmen, sich auf den Einkauf von externen Services und deren Weitervermittlung an das Business konzentrieren, oder eine Mischform der ersten beiden anstreben.
+
+Alle drei Strategien setzen aber voraus, dass die IT ihre operationelle Struktur derer eines IT-Dienstleisters angleicht. Dafür braucht sie entsprechendes Qualitätsmanagement, um dem Business ihren Wert beweisen zu können.
 
 \chapter{Fazit}
 
