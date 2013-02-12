@@ -2,5 +2,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces WSLA-Services und ihre Interaktionen\relax }}{8}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Eine 3-Parteien-WSLA-Konstruktion\relax }}{10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Eine 3-Parteien-WSLA-Konstruktion\relax }}{9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Beispiel f\IeC {\"u}r eine WSLA-Service Description\relax }}{10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces XML-Definition eines WSLA-{\tt SLAParameter}\relax }}{11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces XML-Definition einer WSLA-{\tt Metric}\relax }}{11}
 \addvspace {10\p@ }

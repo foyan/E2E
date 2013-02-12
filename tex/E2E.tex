@@ -52,6 +52,43 @@
 \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
 
 \usepackage{amsthm}
+\usepackage{listings}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+\lstset{
+   language=XML,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
@@ -182,6 +219,12 @@ Da die Etablierung eines SLAs weitreichende Konsequenzen auf die Konfiguration d
 
 Alle diese Anforderungen führen zu entsprechenden Services und Sprachdefinitionen. Das grundsätzliche Schema ist in Abbildung \ref{wslaone} dargestellt. Die wesentlichen Komponenten sind die folgenden:
 
+\begin{figure}
+\caption{Eine 3-Parteien-WSLA-Konstruktion}
+\label{wslaone}
+\includegraphics[scale=0.6]{diagramme/wsla_basic.pdf}
+\end{figure}
+
 \begin{description}
 \item[Offerierter Web-Service] Der Web-Service, der zur Verfügung gestellt wird. Das WSLA dient primär der Überwachung dieses Services.
 \item[Konsumierende Applikation] Die Applikation (oder Service oder Business-Prozess), welche den offerierten Web-Service konsumiert.
@@ -192,11 +235,67 @@ Alle diese Anforderungen führen zu entsprechenden Services und Sprachdefinition
 \item[Management-Service innerhalb Firma B] Ein Service, der Notifikationen über Verletzungen des SLAs erhält und darauf entsprechend reagiert.
 \end{description}
 
+Die Sprache besteht aus folgenden drei Teilbereichen:
+\begin{description}
+\item[Parties] Dieser Bereich definiert alle in das SLA involvierten Parteien. 
+\item[Service Description] Dieser Bereich spezifiziert die Charakteristika des Services und seine beobachtbaren Parameter \cite{ibm:wslaPaper}, welche für die Mess-Services von Bedeutung sind. Als Beispiel einer Service Description sei ein Service gemäss Abbildung \ref{wsladesc} gegeben. Die wesentlichen Elemente sind {\tt SLAParameter} und {\tt Metric} -- {\tt SLAParameter} definiert vor allem die Kommunikationseigenschaften (welche Party wird darüber informiert), während {\tt Metric} die dazugehörige Metrik mit einer Berechnungsfunktion sowie Referenzen auf darunterliegende Metriken enthält. Die XML-Listings in den Abbildungen \ref{wslaparamxml} und \ref{wslametricxml} sollen dies illustrieren.
+
 \begin{figure}
-\caption{Eine 3-Parteien-WSLA-Konstruktion}
-\label{wslaone}
-\includegraphics[scale=0.7]{diagramme/wsla_basic.pdf}
+\caption{Beispiel für eine WSLA-Service Description}
+\label{wsladesc}
+\includegraphics[scale=0.6]{diagramme/wsla_servicedesc.pdf}
 \end{figure}
+
+\begin{figure}
+\caption{XML-Definition eines WSLA-{\tt SLAParameter}}
+\label{wslaparamxml}
+\begin{lstlisting}
+<SLAParameter name="OverUtilization" type="float" unit="Percentage">
+	<Metric>PercentOverUtilized</Metric>
+	<Communication>
+		<Source>Firma B</Source>
+		<Pull>Firma C</Pull>
+		<Push>Firma C</Push>
+	</Communication>
+</SLAParameter>
+\end{lstlisting}
+\end{figure}
+
+\begin{figure}
+\caption{XML-Definition einer WSLA-{\tt Metric}}
+\label{wslametricxml}
+\begin{lstlisting}
+<Metric name="PercentOverUtilized" type="float" unit="Percentage">
+	<Source>Firma C</Source>
+	<Function xsi:type="percentage > Threshold" resultType="float">
+		<Schedule>BusinessDay</Schedule>
+		<Metric>UtilizationTimeSeries</Metric>
+		<Value>
+			<LongScalar>0.8</LongScalar>
+		</Value>
+	</Function>
+</Metric>
+
+<Metric name="UtilizationTimeSeries" type="TS" unit="">
+	<Source>Firma C</Source>
+	<Function xsi:type="timeSeriesConstructor" resultType="float">
+		<Schedule>Every5Minutes</Schedule>
+		<Metric>ProbedUtilization</Metric>
+		<Window>12</Window>
+	</Function>
+</Metric>
+
+<Metric name="ProbedUtilization" type="float" unit="">
+	<Source>Firma B</Source>
+	<MeasurementDirective xsi:type="Gauge" resultType="float">
+		<RequrestURL>http://acme.com/SystemUtil</RequestURL>
+	</MeasurementDirective>
+</Metric>
+\end{lstlisting}
+\end{figure}
+
+\item[Obligations] Dieser Bereich spezifiziert diverse Garantien und Einschränkungen, welche für SLA-Parameter gegeben werden können. Dieser Bereich ist vor allem für den Condition-Evaluation-Service von Bedeutung.
+\end{description}
 
 \section{Gestaltung von IT-Leistungskatalogen mit E2E}
 

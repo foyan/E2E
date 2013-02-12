@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  12 FEB 2013 22:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  13 FEB 2013 00:16
 entering extended mode
 **C:/Code/E2E/tex/E2E.tex
 (C:/Code/E2E/tex/E2E.tex
@@ -551,21 +551,57 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip109
 \dth@everypar=\toks27
 )
-\c@definition=\count105
+("C:\Dokumente und Einstellungen\flo\Anwendungsdaten\MiKTeX\2.9\tex\latex\listi
+ngs\listings.sty"
+\lst@mode=\count105
+\lst@gtempboxa=\box27
+\lst@token=\toks28
+\lst@length=\count106
+\lst@currlwidth=\dimen136
+\lst@column=\count107
+\lst@pos=\count108
+\lst@lostspace=\dimen137
+\lst@width=\dimen138
+\lst@newlines=\count109
+\lst@lineno=\count110
+\lst@maxwidth=\dimen139
+
+("C:\Dokumente und Einstellungen\flo\Anwendungsdaten\MiKTeX\2.9\tex\latex\listi
+ngs\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count111
+\lst@skipnumbers=\count112
+\lst@framebox=\box28
+)
+("C:\Dokumente und Einstellungen\flo\Anwendungsdaten\MiKTeX\2.9\tex\latex\listi
+ngs\listings.cfg"
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+ ("C:\Programme\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Programme\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+Package color Info: Redefining color cyan on input line 64.
+\c@definition=\count113
 
 (C:\Code\E2E\tex\E2E.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -605,25 +641,27 @@ LaTeX Font Info:    ... okay on input line 69.
 ("C:\Dokumente und Einstellungen\flo\Anwendungsdaten\MiKTeX\2.9\tex\context\bas
 e\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen136
-\scratchbox=\box27
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen137
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count114
+\scratchdimen=\dimen140
+\scratchbox=\box29
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen141
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks30
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count120
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 71.
+(Font)              <14.4> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 71.
+(Font)              <7> on input line 108.
  [1
 
 
@@ -642,6 +680,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Kapitel 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              You should use the features of package `tocbasic'
+(scrreprt)              instead of \float@addtolists.
+(scrreprt)              Support for \float@addtolists may be removed from
+(scrreprt)              `scrreprt' soon .
+
 [3
 
 ]
@@ -653,33 +698,33 @@ Kapitel 3.
 [5
 
 ]
-Overfull \hbox (5.02005pt too wide) in paragraph at lines 140--142
+Overfull \hbox (5.02005pt too wide) in paragraph at lines 177--179
 []\OT1/cmr/m/n/10.95 Es hat sich ge-
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 179.
 
 ("C:\Programme\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 179.
 
-Overfull \hbox (7.3318pt too wide) in paragraph at lines 149--151
+Overfull \hbox (7.3318pt too wide) in paragraph at lines 186--188
 []\OT1/cmr/m/n/10.95 Bez[]uglich
  []
 
 [6]
-Overfull \hbox (2.6628pt too wide) in paragraph at lines 158--159
+Overfull \hbox (2.6628pt too wide) in paragraph at lines 195--196
 []\OT1/cmr/m/n/10.95 Die en-han-ced
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 161.
+(Font)              using `OT1/cmss/bx/n' instead on input line 198.
 
 
-Overfull \hbox (1.11542pt too wide) in paragraph at lines 168--170
+Overfull \hbox (1.11542pt too wide) in paragraph at lines 205--207
 []\OT1/cmr/m/n/10.95 Aus die-sem Grund schla-gen die Au-to-ren von IBM ei-ner-s
 eits einen spe-zi-el-len Deploy-
  []
@@ -688,32 +733,41 @@ eits einen spe-zi-el-len Deploy-
 File: diagramme/wsla_context.pdf Graphic file (type pdf)
 
 <use diagramme/wsla_context.pdf>
-Package pdftex.def Info: diagramme/wsla_context.pdf used on input line 180.
+Package pdftex.def Info: diagramme/wsla_context.pdf used on input line 217.
 (pdftex.def)             Requested size: 404.70924pt x 297.91095pt.
+
+<diagramme/wsla_basic.pdf, id=33, 546.04pt x 441.65pt>
+File: diagramme/wsla_basic.pdf Graphic file (type pdf)
+
+<use diagramme/wsla_basic.pdf>
+Package pdftex.def Info: diagramme/wsla_basic.pdf used on input line 225.
+(pdftex.def)             Requested size: 327.62653pt x 264.99203pt.
  [8 <C:/Code/E2E/tex/diagramme/wsla_context.pdf>]
-Overfull \hbox (1.95343pt too wide) in paragraph at lines 190--191
+Overfull \hbox (1.95343pt too wide) in paragraph at lines 233--234
 []\OT1/cmr/m/n/10.95 Ein Ser-vice, wel-cher die Me-tri-ken der ver-schie-de-nen
  Mess-
  []
 
-<diagramme/wsla_basic.pdf, id=108, 546.04pt x 441.65pt>
-File: diagramme/wsla_basic.pdf Graphic file (type pdf)
+[9 <C:/Code/E2E/tex/diagramme/wsla_basic.pdf>]
+<diagramme/wsla_servicedesc.pdf, id=121, 529.98pt x 554.07pt>
+File: diagramme/wsla_servicedesc.pdf Graphic file (type pdf)
 
-<use diagramme/wsla_basic.pdf>
-Package pdftex.def Info: diagramme/wsla_basic.pdf used on input line 198.
-(pdftex.def)             Requested size: 382.22539pt x 309.15288pt.
+<use diagramme/wsla_servicedesc.pdf>
+Package pdftex.def Info: diagramme/wsla_servicedesc.pdf used on input line 246.
 
-Overfull \hbox (1.82285pt too wide) in paragraph at lines 208--209
+(pdftex.def)             Requested size: 317.99043pt x 332.44456pt.
+ [10 <C:/Code/E2E/tex/diagramme/wsla_servicedesc.pdf>] [11]
+Overfull \hbox (1.82285pt too wide) in paragraph at lines 307--308
 []\OT1/cmr/m/n/10.95 Praktisch s[]amt-li-che Un-ter-neh-men ha-ben
  []
 
-[9] [10 <C:/Code/E2E/tex/diagramme/wsla_basic.pdf>]
+[12]
 Kapitel 4.
-[11
+[13
 
 ] (C:\Code\E2E\tex\E2E.lof)
 \tf@lof=\write4
- (C:\Code\E2E\tex\E2E.bbl [12
+ (C:\Code\E2E\tex\E2E.bbl [14
 
 ]
 Underfull \hbox (badness 2042) in paragraph at lines 67--74
@@ -721,7 +775,7 @@ Underfull \hbox (badness 2042) in paragraph at lines 67--74
 dia, Die freie En-zy-
  []
 
-[13
+[15
 
 ]
 Underfull \hbox (badness 2237) in paragraph at lines 85--92
@@ -729,30 +783,32 @@ Underfull \hbox (badness 2237) in paragraph at lines 85--92
 i-ki-pe-dia, The Free
  []
 
-) [14] (C:\Code\E2E\tex\E2E.aux)
+) [16] (C:\Code\E2E\tex\E2E.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5374 strings out of 494045
- 82281 string characters out of 3149938
- 175624 words of memory out of 3000000
- 8592 multiletter control sequences out of 15000+200000
- 11112 words of font info for 39 fonts, out of 3000000 for 9000
+ 7086 strings out of 494045
+ 105173 string characters out of 3149938
+ 277805 words of memory out of 3000000
+ 10285 multiletter control sequences out of 15000+200000
+ 11578 words of font info for 41 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 50i,10n,54p,608b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,12n,54p,757b,1300s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
 mme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Programme/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Programme/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmss12.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmss17.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss
-bx10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Programme/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on E2E.pdf (14 pages, 202299 bytes).
+/public/amsfonts/cm/cmr9.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmss12.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17
+.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/P
+rogramme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Programme/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Programme/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmtt10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmtt9.pfb>
+Output written on E2E.pdf (16 pages, 251272 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
+ 191 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
