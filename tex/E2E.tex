@@ -129,9 +129,13 @@ Die dafür notwendigen Definitionen sind mittlerweile ebenfalls standardisiert o
 
 Für sinnvolles End-to-End-Monitoring der Business-Prozesse müssen natürlich auch die daran beteiligten Web-Services überwacht werden können -- und entsprechende SLAs zwischen dem Anbieter des Service (oder dem Service selbst) und dem Konsumenten vereinbart werden können.
 
-Klassische SLAs sind als Freitext formuliert. 
+Da die Benutzung von Web-Services aber dynamisch funktioniert (d.h. eine Fall-zu-Fall-Geschäftsbeziehung eingegangen wird), müssen schlussendlich auch Definition, Verhandlung, Festlegung, Überwachung und Durchsetzung der zugehörigen SLAs dynamisch (sprich automatisiert) funktionieren können \cite{ibm:wslaPaper}.
 
-IBM Bla \cite{ibm:wslaSpec, ibm:wslaPaper}
+Klassische SLAs sind als Freitext formuliert -- was aus naheliegenden Gründen in direktem Widerspruch zur Anforderung der Automatisierbarkeit steht.
+
+Die aktuelle Praxis (auch für alle anderen Arten von Agreements) ist darum, Templates zu entwickeln -- Freitext, welcher die grundlegenden Züge der Abmachung beschreibt, kombiniert mit semantischen Feldern. Dieser Ansatz hat allerdings das Problem, dass er einigermassen unflexibel und nur für sehr grundlegende SLOs genügend ist \cite{ibm:wslaPaper}.
+
+Findige Köpfe von IBM haben darum 2003 einen Standard vorgestellt: Web Service Level Agreements \cite{ibm:wslaSpec, ibm:wslaPaper}.
 
 \section{Gestaltung von IT-Leistungskatalogen mit E2E}
 
