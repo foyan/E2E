@@ -56,6 +56,13 @@ Michael Str\"{o}bel.
   2006.
 \newblock [Online; Stand 11. Februar 2013].
 
+\bibitem{rfc2758}
+Kenneth~D. White.
+\newblock { Definitions of Managed Objects for Service Level Agreements
+  Performance Monitoring}.
+\newblock \url{http://tools.ietf.org/html/rfc2758}, 2000.
+\newblock [Online; Stand 12. Februar 2013].
+
 \bibitem{wiki:bsm}
 Wikipedia.
 \newblock {Business Service Management --- Wikipedia{,} Die freie
@@ -72,7 +79,7 @@ Wikipedia.
 \newblock
   \url{http://en.wikipedia.org/w/index.php?title=Enhanced_Telecom_Operations_Map&oldid=529955241},
   2012.
-\newblock [Online; accessed 12-February-2013].
+\newblock [Online; Stand 12. Februar 2013].
 
 \bibitem{wiki:wsdl}
 Wikipedia.

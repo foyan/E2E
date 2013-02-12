@@ -146,7 +146,7 @@ Findige Köpfe von IBM haben darum 2003 dafür eine grundsätzliche Lösung vorg
 \item die SLOs,
 \item sowie die Massnahmen, die im Falle einer Verletzung eines oder mehrerer SLOs zu treffen sind.
 \end{itemize}
-\item[Möglichkeiten zur Integration mit eCommerce-Systemen und Plattformen] Bezüglich eCommerce und B2B ist die Automatisierung schon sehr weit fortgeschritten -- ein SLA-Framework sollte also in seinen Grundzügen kompatibel zu dortigen existierenden Ansätzen sein. IBM sieht vor allem folgende Integrationsmöglichkeiten:
+\item[Möglichkeiten zur Integration mit eCommerce-Systemen und -Plattformen] Bezüglich eCommerce und B2B ist die Automatisierung schon sehr weit fortgeschritten -- ein SLA-Framework sollte also in seinen Grundzügen kompatibel zu dortigen existierenden Ansätzen sein. IBM sieht vor allem folgende Integrationsmöglichkeiten:
 \begin{itemize}
 \item Bewerbung und Verkauf von SLA-basierten Services,
 \item Integration in elektronische Marktplätze wie jene von Ariba (welche mittlerweile von SAP übernommen worden ist \cite{wiki:ariba}) oder CommerceOne (welche mittlerweile konkurs gegangen ist \cite{wiki:commerceone}),
@@ -161,11 +161,26 @@ Aus diesem Grund definiert \cite{ibm:wslaPaper} diejenigen Parteien, welche das 
 \item[{\em Need-to-know Principle} für das Deployment von SLAs]
 Es liegt auf der Hand, dass alle SLA-relevanten Definitionen sowie alle Parteien (ob Signatory oder Supporting im Sinne von oben) in einem einzigen SLA festgelegt sein sollten. Gleichzeitig kann aber die Landschaft der involvierten Parteien einigermassen komplex werden -- und bestimmte Parteien werden das Bedürfnis haben, dass sie (oder Drittparteien) für andere nicht sichtbar sind.
 
-Beispielsweise möchte ein Service Provider, der Teile (oder das Ganze) seines Services wiederum von einem dritten Service Provider einkauft, diesen nicht offenlegen. Des weiteren möchte wohl keine der Signatory parties den Supporting parties mehr Kennzahlen als nötig offenlegen (vor allem keine Preise).
-\item Bla
+Beispielsweise möchte ein Service Provider, der Teile (oder das Ganze) seines Services wiederum von einem dritten Service Provider einkauft, diesen nicht offenlegen. Des weiteren möchte wohl keine der Signatory parties den Supporting parties mehr Kennzahlen als nötig offenlegen (vor allem keine Preise) \cite{ibm:wslaPaper}.
+
+Diese Anforderung macht das Deployment eines SLAs bei den verschiedenen involvierten Parteien einigermassen kompliziert, denn es dürfen nur diejenigen Teile ausgerollt werden, die jeweils notwendig sind, damit eine Partei ihre Rolle wahrnehmen kann.
+
+Aus diesem Grund schlagen die Autoren von IBM einerseits einen speziellen Deploy\-ment-Service vor (dessen Einbettung in den Gesamtkontext der Abbildung \ref{wslacontext} entnommen werden kann), einerseits ein zweistufiges Deployment-Verfahren:
+\begin{enumerate}
+\item Der Deployment-Service generiert Konfigurationsinformation im sogenannten {\em Service Deployment Information (SDI)}-Format (\cite{ibm:wslaPaper, ibm:wslaSpec}) an die Supporting parties.
+\item Die Supporting parties konfigurieren ihre eigenen Systeme anhand der Informationen im gesandten SDI.
+\end{enumerate}
+\item[SLA-getriebene Konfiguration von verwalteten Ressourcen]
+Da die Etablierung eines SLAs weitreichende Konsequenzen auf die Konfiguration der verwalteten Ressourcen eines Service Providers haben kann, muss ein SLA-Management-Framework wie das besprochene die Möglichkeit bieten, einerseits sich auf bestehende Infrastruktur zu beziehen, andererseits die existierenden Metriken dieser existierenden Infrastruktur zu nutzen und zu den definierten Metriken innerhalb des SLAs in Beziehnung zu setzen. Beispielsweise existiert ein RFC für ein MIB für SLA-Performance-Messung in SNMP-Umfeldern \cite{ibm:wslaPaper, rfc2758}.
 \end{description}
 
-Das grundsätzliche Schema ist in Abbildung \ref{wslaone} dargestellt. Die wesentlichen Komponenten sind die folgenden:
+\begin{figure}
+\caption{WSLA-Services und ihre Interaktionen}
+\label{wslacontext}
+\includegraphics[scale=0.7]{diagramme/wsla_context.pdf}
+\end{figure}
+
+Alle diese Anforderungen führen zu entsprechenden Services und Sprachdefinitionen. Das grundsätzliche Schema ist in Abbildung \ref{wslaone} dargestellt. Die wesentlichen Komponenten sind die folgenden:
 
 \begin{description}
 \item[Offerierter Web-Service] Der Web-Service, der zur Verfügung gestellt wird. Das WSLA dient primär der Überwachung dieses Services.

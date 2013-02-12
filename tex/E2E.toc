@@ -11,6 +11,6 @@
 \contentsline {section}{\numberline {3.4}WSLAs (Web Service Level Agreements)}{5}
 \contentsline {section}{\numberline {3.5}Gestaltung von IT-Leistungskatalogen mit E2E}{9}
 \contentsline {section}{\numberline {3.6}Outsourcing: Auswirkungen von E2E}{9}
-\contentsline {chapter}{\numberline {4}Fazit}{10}
-\contentsline {chapter}{Abbildungsverzeichnis}{11}
-\contentsline {chapter}{Literaturverzeichnis}{12}
+\contentsline {chapter}{\numberline {4}Fazit}{11}
+\contentsline {chapter}{Abbildungsverzeichnis}{12}
+\contentsline {chapter}{Literaturverzeichnis}{13}
