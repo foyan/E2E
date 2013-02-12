@@ -4,7 +4,7 @@
 % This is a simple template for a LaTeX document using the "article" class.
 % See "book", "report", "letter" for other types of document.
 
-\documentclass[11pt]{scrreprt} % use larger type; default would be 10pt
+\documentclass[11pt,listof=totoc]{scrreprt} % use larger type; default would be 10pt
 
 \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
 \usepackage{german}
@@ -101,7 +101,7 @@ Bla,.
 
 Bla. \cite{EllisKauferstein200311}
 
-\subsection{Metriken und KPIs}
+\section{Metriken und KPIs}
 
 Metriken... Blah... \cite{forrester:slaBestPractices}
 
@@ -117,7 +117,7 @@ Metriken... Blah... \cite{forrester:slaBestPractices}
 \item Sowohl der Dienstleister wie auch der Abnehmer akzeptieren die Metrik.
 \end{enumerate}
 
-\subsection{WSLAs (Web Service Level Agreements)}
+\section{WSLAs (Web Service Level Agreements)}
 
 SOA (Service Oriented Architecture) ist ein aktuelles Buzzword: Innerhalb von Business-Prozessen agierende Applikationen, die sich dynamisch an ihre benötigten Services binden. Als Quasi-Standard haben sich in diesem Umfeld Web-Services durchgesetzt.
 
@@ -135,7 +135,51 @@ Klassische SLAs sind als Freitext formuliert -- was aus naheliegenden Gründen i
 
 Die aktuelle Praxis (auch für alle anderen Arten von Agreements) ist darum, Templates zu entwickeln -- Freitext, welcher die grundlegenden Züge der Abmachung beschreibt, kombiniert mit semantischen Feldern. Dieser Ansatz hat allerdings das Problem, dass er einigermassen unflexibel und nur für sehr grundlegende SLOs genügend ist \cite{ibm:wslaPaper}.
 
-Findige Köpfe von IBM haben darum 2003 einen Standard vorgestellt: Web Service Level Agreements \cite{ibm:wslaSpec, ibm:wslaPaper}.
+Findige Köpfe von IBM haben darum 2003 dafür eine grundsätzliche Lösung vorgestellt: Das Web Service Level Agreement Framework \cite{ibm:wslaSpec, ibm:wslaPaper}, mit den folgenden Anforderungen und Design-Zielen:
+\begin{description}
+\item[Flexible formale Sprache, die einen weiten Bereich von SLAs abdeckt.] Es hat sich gezeigt, dass SLA-Parameter verschiedener Provider und unterschiedlicher Services, die identisch erscheinen, trotzdem stark in ihrer Semantik variieren. Darum ist es wichtig, dass ein SLA-Framework die Parteien nicht in der Formulierung der SLAs einschränkt. Handkehrum sind aber SLAs in ihrer Struktur stets identisch. Jedes SLA enthält:
+\begin{itemize}
+\item die involvierten Parteien,
+\item die SLA-Parameter,
+\item die Metriken, welche die Parameter vervollständigen,
+\item den Algorithmus, mit welchem die SLA-Parameter berechnet werden,
+\item die SLOs,
+\item sowie die Massnahmen, die im Falle einer Verletzung eines oder mehrerer SLOs zu treffen sind.
+\end{itemize}
+\item[Möglichkeiten zur Integration mit eCommerce-Systemen und Plattformen] Bezüglich eCommerce und B2B ist die Automatisierung schon sehr weit fortgeschritten -- ein SLA-Framework sollte also in seinen Grundzügen kompatibel zu dortigen existierenden Ansätzen sein. IBM sieht vor allem folgende Integrationsmöglichkeiten:
+\begin{itemize}
+\item Bewerbung und Verkauf von SLA-basierten Services,
+\item Integration in elektronische Marktplätze wie jene von Ariba (welche mittlerweile von SAP übernommen worden ist \cite{wiki:ariba}) oder CommerceOne (welche mittlerweile konkurs gegangen ist \cite{wiki:commerceone}),
+\item weitere Marketplace- und Matchmaking-Anwendungen \cite{Bichler200106}, auch für das Matching von Produkten mit komplexen Attributen (die eben in den SLAs spezifiziert werden können),
+\item automatisierte Verhandlung, wie beispielsweise vom Projekt SilkRoad vorgesehen \cite{Strobel:2001:DRP:593916.593929, Stroebel00aframework},
+\item Verknüpfung von Business-Prozessen über Organisationsgrenzen hinweg, beispielsweise über den ebXML-Stack \cite{wiki:ebxml, ibm:wslaPaper}
+\end{itemize}
+\item[Übertragung von Überwachungs-Verantwortlichkeiten an Drittparteien]
+Die enhanced Telecom Operations Map (eTOM) \cite{ibm:wslaPaper, wiki:etom} definiert eine Vielzahl von Rollen, die ein Service-Provider einnehmen kann; und momentaner Stand der Dinge ist auch, dass ein SLA vor allem als bilaterales Abkommen zwischen zwei Parteien betrachtet wird. Es kann nun aber Fälle geben, in denen die Daten für die Metriken weder von der einen noch von der anderen Partei sinnvoll geliefert werden können. Ausserdem können Fälle auftreten, in denen die eine Partei der anderen in Bezug auf die korrekte Bereitstellung der Daten misstraut.
+
+Aus diesem Grund definiert \cite{ibm:wslaPaper} diejenigen Parteien, welche das SLA tatsächlich unterschreiben (typischerweise der Dienstleister und der Kunde) als sogenannte {\em Signatory parties}, und lässt daneben eine beliebige Anzahl sogenannter {\em Supporting parties} zu. Diese übernehmen beispielsweise Messungen oder die Auswertung der Daten.
+\item[{\em Need-to-know Principle} für das Deployment von SLAs]
+
+\item Bla
+\end{description}
+
+Das grundsätzliche Schema ist in Abbildung \ref{wslaone} dargestellt. Die wesentlichen Komponenten sind die folgenden:
+
+\begin{description}
+\item[Offerierter Web-Service] Der Web-Service, der zur Verfügung gestellt wird. Das WSLA dient primär der Überwachung dieses Services.
+\item[Konsumierende Applikation] Die Applikation (oder Service oder Business-Prozess), welche den offerierten Web-Service konsumiert.
+\item[Mess-Service innerhalb Firma B] Ein Service, welcher direkt durch Konsumation anfallende Metriken des offerierten Web-Services misst (beispielsweise die Antwort-Zeit).
+\item[Mess-Service innerhalb Firma C] Ein Service, welcher indirekte und globale Metriken misst (beispielsweise, ob der Service überhaupt verfügbar ist).
+\item[Condition Evaluation Service] Ein Service, welcher die Metriken der verschiedenen Mess-Services erhält und gegen den Inhalt des SLAs überprüft.
+\item[Management-Service innerhalb Firma A] Ein Service, der Notifikationen über Verletzungen des SLAs erhält und darauf entsprechend reagiert.
+\item[Management-Service innerhalb Firma B] Ein Service, der Notifikationen über Verletzungen des SLAs erhält und darauf entsprechend reagiert.
+\end{description}
+
+\begin{figure}
+\caption{Eine 3-Parteien-WSLA-Konstruktion}
+\label{wslaone}
+\includegraphics[scale=0.7]{diagramme/wsla_basic.pdf}
+\end{figure}
 
 \section{Gestaltung von IT-Leistungskatalogen mit E2E}
 
@@ -153,6 +197,8 @@ Die interne IT kann sich nun entweder dieses Konkurrenz- und Kostendrucks annehm
 Alle drei Strategien setzen aber voraus, dass die IT ihre operationelle Struktur derer eines IT-Dienstleisters angleicht. Dafür braucht sie entsprechendes Qualitätsmanagement, um dem Business ihren Wert beweisen zu können.
 
 \chapter{Fazit}
+
+\listoffigures
 
 \bibliography{Referenzen}
 \bibliographystyle{plain}

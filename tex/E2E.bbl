@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{ibm:wslaPaper}
 {Alexander Keller und Heiko Ludwig}.
@@ -16,12 +16,19 @@
 \bibitem{ibm:wslaSpec}
 {Heiko Ludwig et al.}
 \newblock {Web Service Level Agreement (WSLA) Language Specification}.
+\newblock \url{http://www.research.ibm.com/wsla/WSLASpecV1-20030128.pdf}, 2003.
+\newblock [Online; Stand 11. Februar 2013].
 
 \bibitem{forrester:slaBestPractices}
 {Jean-Pierre Garbani}.
 \newblock {Best Practices For Service-Level Management}.
 \newblock \url{http://i.zdnet.com/whitepapers/Forr051103489400.pdf}, 2004.
 \newblock [Online; Stand 11. Februar 2013].
+
+\bibitem{Bichler200106}
+{Martin Bichler}.
+\newblock {\em {The Future of e-Markets: Multidimensional Market Mechanisms}}.
+\newblock Cambridge University Press, 1 edition, 6 2001.
 
 \bibitem{forrester:bsm}
 {Peter O'Neill, Thomas Mendel et al.}
@@ -30,6 +37,16 @@
   \url{http://www.ktsl.com/downloads/forrester_bsm_definition_whitepaper.pdf},
   2006.
 \newblock [Online; Stand 11. Februar 2013].
+
+\bibitem{Stroebel00aframework}
+Michael Ströbel.
+\newblock {A Framework for Electronic Negotiations Based on Adjusted-Winner
+  Mediation}, 2000.
+
+\bibitem{Strobel:2001:DRP:593916.593929}
+Michael Str\"{o}bel.
+\newblock {Design of Roles and Protocols for Electronic Negotiations}.
+\newblock 1(3):335--353, July 2001.
 
 \bibitem{forrester:implementingBsm}
 {Thomas Mendel, Peter O'Neill et al.}
@@ -48,6 +65,15 @@ Wikipedia.
   2011.
 \newblock [Online; Stand 11. Februar 2013].
 
+\bibitem{wiki:etom}
+Wikipedia.
+\newblock {Enhanced Telecom Operations Map --- Wikipedia{,} The Free
+  Encyclopedia}.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Enhanced_Telecom_Operations_Map&oldid=529955241},
+  2012.
+\newblock [Online; accessed 12-February-2013].
+
 \bibitem{wiki:wsdl}
 Wikipedia.
 \newblock {Web Services Description Language --- Wikipedia{,} The Free
@@ -56,6 +82,28 @@ Wikipedia.
   \url{http://en.wikipedia.org/w/index.php?title=Web_Services_Description_Language&oldid=530280073},
   2012.
 \newblock [Online; Stand 11. Februar 2013].
+
+\bibitem{wiki:ariba}
+Wikipedia.
+\newblock {Ariba --- Wikipedia{,} The Free Encyclopedia}.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Ariba&oldid=537869636}, 2013.
+\newblock [Online; Stand 12. Februar 2013].
+
+\bibitem{wiki:commerceone}
+Wikipedia.
+\newblock {Commerce One --- Wikipedia{,} The Free Encyclopedia}.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Commerce_One&oldid=533102537},
+  2013.
+\newblock [Online; Stand 12. Februar 2013].
+
+\bibitem{wiki:ebxml}
+Wikipedia.
+\newblock {ebXML --- Wikipedia{,} The Free Encyclopedia}.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=EbXML&oldid=531633145}, 2013.
+\newblock [Online; Stand 12. Februar 2013].
 
 \bibitem{wiki:soap}
 Wikipedia.
