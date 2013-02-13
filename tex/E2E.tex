@@ -138,7 +138,8 @@ Eine allgemein bekannte Definition sagt:
 Ein Service Level Agreement (SLA) ist der Teil eines Dienstleistungsvertrags, in welchem die Dienstleistung formal definiert ist. In der Praxis wird der Begriff {\em SLA} manchmal für die vertraglich zugesicherte Lieferzeit verwendet. \cite{wiki:sla}
 \end{quote}
 
-Es ist offensichtlich, dass diese Definition noch nicht enorm hilfreich ist. Forrester definiert darum zwei neue Begriffe:
+Es ist offensichtlich, dass diese Definition noch nicht enorm hilfreich ist. Forrester definiert darum zwei neue Begriffe, wobei Abbildung \ref{forr} die jeweilige Abgrenzung zueinander zeigt:
+
 \begin{definition}[Business service management (BSM)] Business service management is an intelligence layer that supports all the management processes involved in monitoring service delivery\footnote{Da sich die beiden englischen Begriffe {\em intelligence} und {\em delivery} nicht so ins Deutsche übersetzen lassen, dass der Sinn des Satzes gewahrt bleibt, wurde vom Autor auf die Übersetzung verzichtet.} \cite{forrester:slaBestPractices}.
 \end{definition}
 
@@ -147,19 +148,22 @@ Service-level management is a process layer that monitors and reports on the qua
 the processes involved in service delivery\footnote{dito.} \cite{forrester:slaBestPractices}.
 \end{definition}
 
-Die Idee ist nun, dass in diesem Kontext sowohl BSM als auch SLM exakt dieselben Qualitätsverbesserungs-Ziele haben müssen. Diese Ziele ({\em objectives}) werden in einem SLA ausgedrückt, wessen Parameter die Business-Zufriedenheit ({\em business satisfaction}) messen sollen.
+Die Idee ist nun, dass in diesem Kontext sowohl BSM als auch SLM exakt dieselben Qualitätsverbesserungs-Ziele haben müssen. Diese Ziele ({\em objectives}) werden in einem SLA ausgedrückt, wessen Parameter die Business-Zufriedenheit ({\em business satisfaction}) messen sollen \cite{forrester:slaBestPractices, EllisKauferstein200311}.
 
 \begin{figure}
-\label{forrester_bsm_slm}
+\label{forr}
 \caption{Abgrenzung von BSM und SLM gemäss Forrester}
 \includegraphics[scale=0.47]{biltli/forrester_bsm_slm.png}
 \end{figure}
 
-Bla. \cite{EllisKauferstein200311}
+\section{SLOs, Metriken und KPIs}
 
-\section{Metriken und KPIs}
+SLAs werden als das Instrument betrachtet, durch welches der Dialog zwischen dem Kunden und dem Dienstleister etabliert werden kann. Die {\em Service-level objectives} (SLOs) wiederum sind dann die Parameter, mit welchen die Zufriedenheit über den angebotetenen Service gemessen wird \cite{forrester:slaBestPractices}. Gemäss Forrester funktioniert das aber nur, wenn folgendes gilt:
 
-Metriken... Blah... \cite{forrester:slaBestPractices}
+\begin{itemize}
+\item Die SLOs werden genau dort gemessen, wo die Dienstleistung verwendet wird.
+\item Die SLOs sind eine korrekte Repräsentation derjenigen Aspekte, die für den Kunden wichtig sind.
+\end{itemize}
 
 \begin{enumerate}
 \item Die Metrik ist objektiv messbar.
