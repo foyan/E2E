@@ -5,12 +5,11 @@
 \contentsline {subsection}{\numberline {2.2.1}Transparenz versus Transformabilit\IeC {\"a}t}{4}
 \contentsline {subsection}{\numberline {2.2.2}Skalierbarkeit nach unten}{4}
 \contentsline {chapter}{\numberline {3}L\IeC {\"o}sungsans\IeC {\"a}tze}{5}
-\contentsline {section}{\numberline {3.1}Neue Techniken}{5}
-\contentsline {section}{\numberline {3.2}SLAs f\IeC {\"u}r E2E-Services}{5}
-\contentsline {section}{\numberline {3.3}Metriken und KPIs}{5}
-\contentsline {section}{\numberline {3.4}WSLAs (Web Service Level Agreements)}{5}
-\contentsline {section}{\numberline {3.5}Gestaltung von IT-Leistungskatalogen mit E2E}{12}
-\contentsline {section}{\numberline {3.6}Outsourcing: Auswirkungen von E2E}{12}
-\contentsline {chapter}{\numberline {4}Fazit}{13}
-\contentsline {chapter}{Abbildungsverzeichnis}{14}
-\contentsline {chapter}{Literaturverzeichnis}{15}
+\contentsline {section}{\numberline {3.1}Service Level Agreements (SLAs)}{5}
+\contentsline {section}{\numberline {3.2}Metriken und KPIs}{5}
+\contentsline {section}{\numberline {3.3}WSLAs (Web Service Level Agreements)}{6}
+\contentsline {section}{\numberline {3.4}Gestaltung von IT-Leistungskatalogen mit E2E}{11}
+\contentsline {section}{\numberline {3.5}Outsourcing: Auswirkungen von E2E}{13}
+\contentsline {chapter}{\numberline {4}Fazit}{14}
+\contentsline {chapter}{Abbildungsverzeichnis}{15}
+\contentsline {chapter}{Literaturverzeichnis}{16}

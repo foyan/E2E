@@ -132,9 +132,28 @@ Bla,.
 
 \chapter{Lösungsansätze}
 
-\section{Neue Techniken}
+\section{Service Level Agreements (SLAs)}
+Eine allgemein bekannte Definition sagt:
+\begin{quote}
+Ein Service Level Agreement (SLA) ist der Teil eines Dienstleistungsvertrags, in welchem die Dienstleistung formal definiert ist. In der Praxis wird der Begriff {\em SLA} manchmal für die vertraglich zugesicherte Lieferzeit verwendet. \cite{wiki:sla}
+\end{quote}
 
-\section{SLAs für E2E-Services}
+Es ist offensichtlich, dass diese Definition noch nicht enorm hilfreich ist. Forrester definiert darum zwei neue Begriffe:
+\begin{definition}[Business service management (BSM)] Business service management is an intelligence layer that supports all the management processes involved in monitoring service delivery\footnote{Da sich die beiden englischen Begriffe {\em intelligence} und {\em delivery} nicht so ins Deutsche übersetzen lassen, dass der Sinn des Satzes gewahrt bleibt, wurde vom Autor auf die Übersetzung verzichtet.} \cite{forrester:slaBestPractices}.
+\end{definition}
+
+\begin{definition}[Service-level Management (SLM)]
+Service-level management is a process layer that monitors and reports on the quality of
+the processes involved in service delivery\footnote{dito.} \cite{forrester:slaBestPractices}.
+\end{definition}
+
+Die Idee ist nun, dass in diesem Kontext sowohl BSM als auch SLM exakt dieselben Qualitätsverbesserungs-Ziele haben müssen. Diese Ziele ({\em objectives}) werden in einem SLA ausgedrückt, wessen Parameter die Business-Zufriedenheit ({\em business satisfaction}) messen sollen.
+
+\begin{figure}
+\label{forrester_bsm_slm}
+\caption{Abgrenzung von BSM und SLM gemäss Forrester}
+\includegraphics[scale=0.47]{biltli/forrester_bsm_slm.png}
+\end{figure}
 
 Bla. \cite{EllisKauferstein200311}
 
