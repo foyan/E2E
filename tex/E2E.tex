@@ -138,7 +138,15 @@ Eine allgemein bekannte Definition sagt:
 Ein Service Level Agreement (SLA) ist der Teil eines Dienstleistungsvertrags, in welchem die Dienstleistung formal definiert ist. In der Praxis wird der Begriff {\em SLA} manchmal für die vertraglich zugesicherte Lieferzeit verwendet. \cite{wiki:sla}
 \end{quote}
 
+Eine typische Eigenschaft eines SLA ist, dass es -- im Unterschied zu einem herkömmlichen Dienstleistungsvertrag -- verschiedene Service-Levels zu unterschiedlichen Konditionen anbietet und so dem Kunden die Möglichkeit gibt, die Dienstleistung gemäss seinen Bedürfnissen und seiner finanziellen Potenz einzukaufen (\cite{EllisKauferstein200311}). Die SLA-Parameter, Objectives und KPIs sind dann abhängig vom gewählten Service-Level.
+
 Es ist offensichtlich, dass diese Definition noch nicht enorm hilfreich ist. Forrester definiert darum zwei neue Begriffe, wobei Abbildung \ref{forr} die jeweilige Abgrenzung zueinander zeigt:
+
+\begin{figure}
+\label{forr}
+\caption{Abgrenzung von BSM und SLM gemäss Forrester}
+\includegraphics[scale=0.47]{biltli/forrester_bsm_slm.png}
+\end{figure}
 
 \begin{definition}[Business service management (BSM)] Business service management is an intelligence layer that supports all the management processes involved in monitoring service delivery\footnote{Da sich die beiden englischen Begriffe {\em intelligence} und {\em delivery} nicht so ins Deutsche übersetzen lassen, dass der Sinn des Satzes gewahrt bleibt, wurde vom Autor auf die Übersetzung verzichtet.} \cite{forrester:slaBestPractices}.
 \end{definition}
@@ -150,12 +158,6 @@ the processes involved in service delivery\footnote{dito.} \cite{forrester:slaBe
 
 Die Idee ist nun, dass in diesem Kontext sowohl BSM als auch SLM exakt dieselben Qualitätsverbesserungs-Ziele haben müssen. Diese Ziele ({\em objectives}) werden in einem SLA ausgedrückt, wessen Parameter die Business-Zufriedenheit ({\em business satisfaction}) messen sollen \cite{forrester:slaBestPractices, EllisKauferstein200311}.
 
-\begin{figure}
-\label{forr}
-\caption{Abgrenzung von BSM und SLM gemäss Forrester}
-\includegraphics[scale=0.47]{biltli/forrester_bsm_slm.png}
-\end{figure}
-
 \section{Service Level Objectives (SLOs)}
 
 SLAs werden als das Instrument betrachtet, durch welches der Dialog zwischen dem Kunden und dem Dienstleister etabliert werden kann. Die {\em Service-level objectives} (SLOs) wiederum sind dann die Parameter, mit welchen die Zufriedenheit über den angebotetenen Service gemessen wird \cite{forrester:slaBestPractices}. Gemäss Forrester funktioniert das aber nur, wenn folgendes gilt:
@@ -165,7 +167,7 @@ SLAs werden als das Instrument betrachtet, durch welches der Dialog zwischen dem
 \item Die SLOs sind eine korrekte Repräsentation derjenigen Aspekte, die für den Kunden wichtig sind.
 \end{itemize}
 
-\section{Metriken}
+\section{Metriken und Key Performance Indicators (KPIs)}
 
 Gemäss Forrester (\cite{forrester:slaBestPractices}) soll eine in einem SLA verwendete Metrik die folgenden Anforderungen erfüllen:
 
@@ -188,10 +190,29 @@ Aus diesem Grunde ist es erforderlich, für die erfolgreiche und ganzheitliche �
 Forrester (\cite{forrester:slaBestPractices}) sieht darum zwei kritische Bereiche, denen während dem Aufbau einer solchartigen SLO-Landschaft Beachtung geschenkt werden muss:
 \begin{description}
 \item[Service/Applikations-Modelle.] Die Idee ist, eine initiale Landkarte der momentanen Services, Applikationen und Komponenten zu entwickeln \cite{forrester:slaBestPractices}, damit Zusammenhänge schon {\em top-down} sichtbar werden und nicht erst in mühsamer Kleinarbeit {\em bottom-up} hergestellt werden müssen. Entschiedener Fokus wird auch auf die sogenannte {\em Configuration Management Database (CMDB)} gelegt. Als wesentliche Erfolgsfaktoren werden hierbei eine dezentrale Organisation ({\em Federation}) sowie Funktionalität genannt, welche die CMDB automatisch anhand einer geänderten Systemlandschaft aktualisieren soll (sogenanntes {\em Auto-discovery}) \cite{forrester:implementingBsm}.
-\item[Historische Daten.] Diese sind vor allem für die Festlegung von Performance-artigen Zielen beim Neuaufbau von SLOs relevant. Da in der ganzen prä-SLO-Welt die Performance eines Services nur End-to-end gemessen wurde (wenn überhaupt), liegen keine relevanten Daten über die Performance der einzelnen Komponenten vor. Die Festlegung dieser wäre also ein Schuss ins Blaue, welcher dann bei Nichteinhaltung (deren Wahrscheinlichkeit eben darum gegeben ist) wohl mehr organisatorische Probleme verursachen als lösen würde. Deshalb sollten historische Daten (möglicherweise anderer Indikatoren) herangezogen werden, um eine gute {\em Ist}-Analyse vornehmen zu können.
+\item[Historische Daten.] Diese sind vor allem für die Festlegung von Performance-artigen Zielen beim Neuaufbau von SLOs relevant. Da in der ganzen prä-SLO-Welt die Performance eines Services nur End-to-end gemessen wurde (wenn überhaupt), liegen keine relevanten Daten über die Performance der einzelnen Komponenten vor. Die Festlegung dieser wäre also ein Schuss ins Blaue, welcher dann bei Nichteinhaltung (deren Wahrscheinlichkeit eben darum gegeben ist) wohl mehr organisatorische Probleme verursachen als lösen würde. Deshalb sollten historische Daten (möglicherweise anderer Indikatoren) herangezogen werden, um eine aussagekräftige Ist-Analyse vornehmen zu können.
 \end{description}
 
-\section{Key Performance Indications (KPIs)}
+Bezüglich der Thematik der ständigen Verbesserung einer Service-Landschaft kann zu guter Letzt auch die Wahl der richtigen Berechnungsmethodik der Metriken beitragen. Beispielsweise kann der ganze Aufbau eines SLOs komplett sinnfrei sein, wenn die Performance-Ziele zu tief angesetzt sind. Wenn als Metrik einfach nur das arithmetische Mittel über eine gewisse Zeit herangezogen wird, könnte der Fall eintreten, dass auf dem Papier alle Ziele mit Bravour erfüllt werden -- Komplettausfälle der Systeme mit negativen Business-Folgen aber (vor allem wenn sie in zeitlich kritischen Phasen auftreten) drücken zwar den Schnitt ein bisschen nach oben, aber nicht so sehr, dass das SLA eine Reaktion gebieten würde.
+
+Forrester schlägt darum explizit die Implementierung der {\em Six-Sigma}-Methodik vor \cite{forrester:slaBestPractices, wiki:sixsigma}:
+\begin{enumerate}
+\item Anstelle eines einzigen Zielwerts sollen ein Zielwert $w_\textrm{Ziel}$, ein maximal tolerierbarer Wert $w_\textrm{max}$ sowie ein minimal tolerierbarer Wert $w_\textrm{min}$ definiert werden.
+\item Anstelle der simplen Berechnung des Durchschnitts der tatsächlich gemessenen Werte $w = \{w_1, w_2,\dots w_n\}$ sollen sowohl Durchschnitt
+\[
+\mu = \frac 1 n \sum\limits_{i=1}^{n} w_i
+\]
+als auch Standardabweichung (\cite{wiki:stdev})
+\[
+\sigma = \left(\frac 1 {n-1} \sum\limits_{i=1}^{n}(w_i - \mu)^2\right)^{\frac 1 2}
+\]
+berechnet werden.
+\item Es wird nun der Sigma-Faktor $x$ eingeführt, sodass
+\[
+x\sigma \ge \max\left\{w_\textrm{Ziel}-w_\textrm{min}, w_\textrm{max}-w_\textrm{Ziel} \right\}
+\]
+gilt. Bei gegebener Normalverteilung der anfallenden Messwerte gibt $x$ Aufschluss über die Performance-Abweichung des Services (\cite{forrester:implementingBsm}); beispielsweise gilt für $x = 1$, dass $31\%$ aller Messwerte innerhalb der tolerierbaren Grenzen liegen, für $x = 6$ sind es bereits $99.99966\%$ (\cite{wiki:sixsigma}).\footnote{Diese Berechnung ist stark vereinfacht -- beispielsweise unterscheidet die Six-Sigma-Methodik noch zwischen kurzfristigen und langfristigen Resultaten. Ausserdem divergiert die Definition des Sigma-Faktors je nach Quelle massiv, mit entsprechenden Auswirkungen auf die Prozentzahl der tolerierbaren Messwerte. Der Autor möchte dies an dieser Stelle unkommentiert lassen und verweist auf Kapitel \ref{fazit}.}
+\end{enumerate}
 
 \section{Web Service Level Agreements (WSLAs)}
 
@@ -352,6 +373,7 @@ Die interne IT kann sich nun entweder dieses Konkurrenz- und Kostendrucks annehm
 Alle drei Strategien setzen aber voraus, dass die IT ihre operationelle Struktur derer eines IT-Dienstleisters angleicht. Dafür braucht sie entsprechendes Qualitätsmanagement, um dem Business ihren Wert beweisen zu können.
 
 \chapter{Fazit}
+\label{fazit}
 
 \listoffigures
 

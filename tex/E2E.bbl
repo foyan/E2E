@@ -120,11 +120,27 @@ Wikipedia.
   2013.
 \newblock [Online; Stand 12. Februar 2013].
 
+\bibitem{wiki:sixsigma}
+Wikipedia.
+\newblock Six sigma --- wikipedia{,} the free encyclopedia.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Six_Sigma&oldid=537707096},
+  2013.
+\newblock [Online; Stand 12. Februar 2013].
+
 \bibitem{wiki:soap}
 Wikipedia.
 \newblock {SOAP --- Wikipedia{,} The Free Encyclopedia}.
 \newblock \url{http://en.wikipedia.org/w/index.php?title=SOAP&oldid=535478625},
   2013.
 \newblock [Online; Stand 11. Februar 2013].
+
+\bibitem{wiki:stdev}
+Wikipedia.
+\newblock {Standard deviation --- Wikipedia{,} The Free Encyclopedia}.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Standard_deviation&oldid=537713485},
+  2013.
+\newblock [Online; Stand 12. Februar 2013].
 
 \end{thebibliography}
