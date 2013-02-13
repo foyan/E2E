@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {3.3}Metriken}{6}
 \contentsline {section}{\numberline {3.4}Key Performance Indications (KPIs)}{7}
 \contentsline {section}{\numberline {3.5}Web Service Level Agreements (WSLAs)}{7}
-\contentsline {section}{\numberline {3.6}Gestaltung von IT-Leistungskatalogen mit E2E}{11}
+\contentsline {section}{\numberline {3.6}Gestaltung von IT-Leistungskatalogen mit E2E}{14}
 \contentsline {section}{\numberline {3.7}Outsourcing: Auswirkungen von E2E}{14}
 \contentsline {chapter}{\numberline {4}Fazit}{15}
 \contentsline {chapter}{Abbildungsverzeichnis}{16}

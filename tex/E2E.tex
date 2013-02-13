@@ -181,6 +181,16 @@ Gemäss Forrester (\cite{forrester:slaBestPractices}) soll eine in einem SLA ver
 \item Sowohl der Dienstleister wie auch der Abnehmer akzeptieren die Metrik.
 \end{enumerate}
 
+Man ist sich in der Industrie einig (\cite{forrester:slaBestPractices, EllisKauferstein200311}), dass die technische Antwortzeit von Services sowie deren grundsätzliche Verfügbarkeit die gängigsten Metriken sind. Auf der anderen Seite ist man sich aber ebenso einig, dass diese Metriken vor allem globaler Natur sind; eine wirkliche ständige Verbesserung der Services im Sinne von Business Process Management sowie \cite{EllisKauferstein200311} bringen sie noch nicht.
+
+Aus diesem Grunde ist es erforderlich, für die erfolgreiche und ganzheitliche Überwachung eines Services auf Business-Level diesen Service als Summe aller involvierten technischen Services zu verstehen. Diese involvierten technischen Services werden dann {\em Komponenten} geheissen, und von diesen werden wiederum Metriken auf Komponenten-Ebene erhoben. Es ist von enormer Wichtigkeit, dass die Komponenten-Metriken ihren sinnvollen Platz in der Konstruktion des gesamten globalen SLOs finden.
+
+Forrester (\cite{forrester:slaBestPractices}) sieht darum zwei kritische Bereiche, denen während dem Aufbau einer solchartigen SLO-Landschaft Beachtung geschenkt werden muss:
+\begin{description}
+\item[Service/Applikations-Modelle.] Die Idee ist, eine initiale Landkarte der momentanen Services, Applikationen und Komponenten zu entwickeln \cite{forrester:slaBestPractices}, damit Zusammenhänge schon {\em top-down} sichtbar werden und nicht erst in mühsamer Kleinarbeit {\em bottom-up} hergestellt werden müssen. Entschiedener Fokus wird auch auf die sogenannte {\em Configuration Management Database (CMDB)} gelegt. Als wesentliche Erfolgsfaktoren werden hierbei eine dezentrale Organisation ({\em Federation}) sowie Funktionalität genannt, welche die CMDB automatisch anhand einer geänderten Systemlandschaft aktualisieren soll (sogenanntes {\em Auto-discovery}) \cite{forrester:implementingBsm}.
+\item[Historische Daten.] Diese sind vor allem für die Festlegung von Performance-artigen Zielen beim Neuaufbau von SLOs relevant. Da in der ganzen prä-SLO-Welt die Performance eines Services nur End-to-end gemessen wurde (wenn überhaupt), liegen keine relevanten Daten über die Performance der einzelnen Komponenten vor. Die Festlegung dieser wäre also ein Schuss ins Blaue, welcher dann bei Nichteinhaltung (deren Wahrscheinlichkeit eben darum gegeben ist) wohl mehr organisatorische Probleme verursachen als lösen würde. Deshalb sollten historische Daten (möglicherweise anderer Indikatoren) herangezogen werden, um eine gute {\em Ist}-Analyse vornehmen zu können.
+\end{description}
+
 \section{Key Performance Indications (KPIs)}
 
 \section{Web Service Level Agreements (WSLAs)}
