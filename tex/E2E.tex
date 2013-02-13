@@ -119,7 +119,15 @@ Die daraus resultierenden Fragestellungen und Aspekte sollen vor allem aus der S
 
 Die Arbeit ist wie folgt aufgebaut: Im vorhergehenden Kapitel wurde der gesamte Inhalt der Arbeit für ein Publikum in Eile zusammengefasst. Der Rest dieses Kapitels wiederum widmet sich der Einbettung der für die Arbeit relevanten Begrifflichkeiten (inklusive ihrer Definitionen) in ihren grösseren Kontext sowie der Ansetzung der Fragestellungen, welche die Arbeit zu beantworten im Sinne hat. Im Kapitel \ref{methodiken} wird auf einige gängige und zukünftige Methodiken eingegangen, bevor schliesslich im Kapitel \ref{fazit} versucht wird, eine Antwort auf die Fragestellungen zu geben oder aber ihre Nichtbeantwortbarkeit aufgezeigt wird. Ausserdem wird ebenda noch ein kurzes Fazit gezogen.
 
-\section{Kontext und Definitionen}
+Auf das Vorstellen eines konkreten Tools wurde bewusst verzichtet, weil dies den Rahmen dieser Arbeit sowohl in Punkto Umfang als auch in Punkto Voraussetzungen bei weitem gesprengt hätte -- ohne vorzugreifen, sei doch jetzt schon verraten, dass End-to-end Monitoring nur dann Sinn macht, wenn sowohl funktionierendes Business Service Management als auch Service Level Management in einer Unternehmung schon aufgezogen ist (was dem Autor beides nicht zur Verfügung steht).
+
+Da die ganze Thematik einerseits noch relativ jung und andererseits ein beliebtes Tummelfeld für Consulting-Dienstleister aller Art ist, ist die Situation der verfügbaren (akademischen und nichtakademischen) Literatur gelinde gesagt dürftig. Die dieser Arbeit zu Grunde liegende Literatur wurde darum vor allem durch Online-Recherche zusammengetragen. Für den technischen Teil lag das Hauptaugenmerk auf der WSLA-Spezifikation sowie der zugehörigen Publikation der Firma IBM \cite{ibm:wslaSpec, ibm:wslaPaper}, für den Business-Teil zu einem grossen Teil auf Publikationen von Forrester Research, Inc \cite{forrester:bsm, forrester:implementingBsm, forrester:slaBestPractices, stephenmann}, welche absichtlich nur im Kapitel \ref{fazit} kritisch hinterfragt werden.
+
+\section{Kontext}
+
+Das in dieser Arbeit besprochene End-to-end Monitoring bezieht sich auf die für den Benutzer (oder den Kunden) sichtbare Prozesse -- welche schlussendlich Business-Prozesse sind. Wie ein solcher Business-Prozess zustande kommt und wie danach dessen Lebenszyklus verwaltet wird, ist die primäre Domäne der Disziplin {\em Business Process Management}, welche hier nicht besprochen wird.
+
+Da die schlussendlich in End-to-end Monitoring involvierten Stellen doch alle sehr IT-lastig sind, das grundsätzliche Ziel aber ist, Business-Prozesse zu überwachen, erfindet der allgemeine Kanon kurzerhand eine neue Disziplin:
 
 \begin{definition}[Business Service Management (BSM)]
 Das Modell des Business Service Management verknüpft die Geschäftsprozesse eines Unternehmens mit den darunterliegenden IT-Services. Dadurch ist es möglich, die Abhängigkeiten von Business zu IT darzustellen, sowie die Auswirkungen von IT-Störungen auf das Business aufzuzeigen. Das Ziel von Business Service Management ist, eine bessere Abstimmung zwischen Business und IT zu erzielen. \cite{wiki:bsm}
@@ -127,15 +135,13 @@ Das Modell des Business Service Management verknüpft die Geschäftsprozesse ein
 
 BSM startete ungefähr im Jahr 2003 als Buzzword, bis sich Forrester Research 2006 dem Thema annahm und begann, darüber zu publizieren. \cite{wiki:bsm, forrester:bsm, forrester:implementingBsm}
 
-\begin{definition}[End-to-end Monitoring]
-Bla,.
-\end{definition}
-
 \section{Fragestellungen}
 
-\subsection{Transparenz versus Transformabilität}
-
-\subsection{Skalierbarkeit nach unten}
+\begin{description}
+\item[Transparenz versus Transformabilität]
+Die erste Fragestellung der Arbeit befasst sich damit, ob sich eine sinnvolle Balance zwischen dem Bedürfnis nach maximaler Transparenz bezüglich der Performance der überwachten Services (mit entsprechend hohem konfiguratorischem und implementatorischem Aufwand) sowie der intrinsischen Anforderungen an Business-Prozesse, dass sie sich ständig neuen Begebenheiten anpassen müssen, gefunden werden kann. Eine sich daraus ableitende Fragestellung ist diejenige, ob es Denkansätze und Infrastrukturen gibt, welche möglicherweise eine Optimierung {\em beider} Aspekte vorsehen oder unterstützen. Dies wäre vor allem für kleine Firmen interessant, welche sich kein vollumfängliches Prozessmanagement leisten können, aber trotzdem ein Outsourcing ihrer Sekundärprozesse gemäss dem Wertschöpfungskettenmodell \cite{Finkeissen200001} anstreben. Diese Firmen sind insbesondere darauf angewiesen, schlank und zeitnah auf veränderte Rahmenbedingungen reagieren zu können, weil sie in ihrem Nicht-Primärmarkt keinerlei Definitionsmacht besitzen.
+\item[Skalierbarkeit nach unten] Die zweite Fragestellung der Arbeit befasst sich damit, wie und ob überhaupt die vorgestellten Methodiken nach unten skalierbar sind (ebenfalls unter dem Gesichtspunkt von kleinen Firmen, die ihre Sekundärprozesse auslagern möchten).
+\end{description}
 
 \chapter{Methodiken/Techniken}
 \label{methodiken}

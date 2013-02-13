@@ -1,9 +1,7 @@
 \contentsline {chapter}{\numberline {1}Management Summary}{3}
 \contentsline {chapter}{\numberline {2}Einf\IeC {\"u}hrung}{4}
-\contentsline {section}{\numberline {2.1}Kontext und Definitionen}{4}
-\contentsline {section}{\numberline {2.2}Fragestellungen}{4}
-\contentsline {subsection}{\numberline {2.2.1}Transparenz versus Transformabilit\IeC {\"a}t}{4}
-\contentsline {subsection}{\numberline {2.2.2}Skalierbarkeit nach unten}{5}
+\contentsline {section}{\numberline {2.1}Kontext}{5}
+\contentsline {section}{\numberline {2.2}Fragestellungen}{5}
 \contentsline {chapter}{\numberline {3}Methodiken/Techniken}{6}
 \contentsline {section}{\numberline {3.1}Service Level Agreements (SLAs)}{6}
 \contentsline {section}{\numberline {3.2}Service Level Objectives (SLOs)}{7}
