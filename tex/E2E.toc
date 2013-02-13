@@ -3,14 +3,14 @@
 \contentsline {section}{\numberline {2.1}Kontext und Definitionen}{4}
 \contentsline {section}{\numberline {2.2}Fragestellungen}{4}
 \contentsline {subsection}{\numberline {2.2.1}Transparenz versus Transformabilit\IeC {\"a}t}{4}
-\contentsline {subsection}{\numberline {2.2.2}Skalierbarkeit nach unten}{4}
-\contentsline {chapter}{\numberline {3}L\IeC {\"o}sungsans\IeC {\"a}tze}{5}
-\contentsline {section}{\numberline {3.1}Service Level Agreements (SLAs)}{5}
-\contentsline {section}{\numberline {3.2}Service Level Objectives (SLOs)}{6}
-\contentsline {section}{\numberline {3.3}Metriken und Key Performance Indicators (KPIs)}{6}
-\contentsline {section}{\numberline {3.4}Web Service Level Agreements (WSLAs)}{8}
-\contentsline {section}{\numberline {3.5}Gestaltung von IT-Leistungskatalogen mit End-to-end Monitoring}{15}
-\contentsline {section}{\numberline {3.6}Auswirkungen von End-to-end Monitoring auf Outsourcing}{16}
-\contentsline {chapter}{\numberline {4}Fazit}{17}
-\contentsline {chapter}{Abbildungsverzeichnis}{18}
-\contentsline {chapter}{Literaturverzeichnis}{19}
+\contentsline {subsection}{\numberline {2.2.2}Skalierbarkeit nach unten}{5}
+\contentsline {chapter}{\numberline {3}Methodiken/Techniken}{6}
+\contentsline {section}{\numberline {3.1}Service Level Agreements (SLAs)}{6}
+\contentsline {section}{\numberline {3.2}Service Level Objectives (SLOs)}{7}
+\contentsline {section}{\numberline {3.3}Metriken und Key Performance Indicators (KPIs)}{7}
+\contentsline {section}{\numberline {3.4}Web Service Level Agreements (WSLAs)}{9}
+\contentsline {section}{\numberline {3.5}Gestaltung von IT-Leistungskatalogen mit End-to-end Monitoring}{16}
+\contentsline {section}{\numberline {3.6}Auswirkungen von End-to-end Monitoring auf Outsourcing}{17}
+\contentsline {chapter}{\numberline {4}Fazit}{19}
+\contentsline {chapter}{Abbildungsverzeichnis}{20}
+\contentsline {chapter}{Literaturverzeichnis}{21}

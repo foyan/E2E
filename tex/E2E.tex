@@ -98,8 +98,9 @@
 
 %%% The "real" document content comes below...
 
-\title{IT Service Management: End-to-end-Überwachung}
-\author{Florian Lüthi}
+\title{End-to-end Monitoring (Vertiefung)}
+\subtitle{Seminar IT Service Management, ZHAW (Zürich)}
+\author{Florian Lüthi\footnote{\tt luethifl@students.zhaw.ch}}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
@@ -112,6 +113,12 @@
 
 \chapter{Einführung}
 
+Diese Seminararbeit ist Teil des Seminars {\em IT Service Management}, gehalten an der ZHAW Standort Zürich im Winter 2012/13. Die Arbeit beschäftigt sich mit dem Teilthema {\em End-to-end Monitoring: Vertiefung}. Das Ziel  ist, einen Überblick über End-to-end Monitoring von IT-Dienstleistungen vor allem aus Business-Sicht zu geben. Des weiteren soll mit Web Service Level Agreements (WSLA) eine Methode vorgestellt werden, wie sich die daraus abgeleiteten Themata und Methodiken grosso modo in komplett automatisierbare Systeme übertragen lässt.
+
+Die daraus resultierenden Fragestellungen und Aspekte sollen vor allem aus der Sichtweise der langfristig aufstrebenden klein- und mittelgrossen Firmen diskutiert werden.
+
+Die Arbeit ist wie folgt aufgebaut: Im vorhergehenden Kapitel wurde der gesamte Inhalt der Arbeit für ein Publikum in Eile zusammengefasst. Der Rest dieses Kapitels wiederum widmet sich der Einbettung der für die Arbeit relevanten Begrifflichkeiten (inklusive ihrer Definitionen) in ihren grösseren Kontext sowie der Ansetzung der Fragestellungen, welche die Arbeit zu beantworten im Sinne hat. Im Kapitel \ref{methodiken} wird auf einige gängige und zukünftige Methodiken eingegangen, bevor schliesslich im Kapitel \ref{fazit} versucht wird, eine Antwort auf die Fragestellungen zu geben oder aber ihre Nichtbeantwortbarkeit aufgezeigt wird. Ausserdem wird ebenda noch ein kurzes Fazit gezogen.
+
 \section{Kontext und Definitionen}
 
 \begin{definition}[Business Service Management (BSM)]
@@ -120,7 +127,7 @@ Das Modell des Business Service Management verknüpft die Geschäftsprozesse ein
 
 BSM startete ungefähr im Jahr 2003 als Buzzword, bis sich Forrester Research 2006 dem Thema annahm und begann, darüber zu publizieren. \cite{wiki:bsm, forrester:bsm, forrester:implementingBsm}
 
-\begin{definition}[End-to-End-Monitoring]
+\begin{definition}[End-to-end Monitoring]
 Bla,.
 \end{definition}
 
@@ -130,7 +137,8 @@ Bla,.
 
 \subsection{Skalierbarkeit nach unten}
 
-\chapter{Lösungsansätze}
+\chapter{Methodiken/Techniken}
+\label{methodiken}
 
 \section{Service Level Agreements (SLAs)}
 Eine allgemein bekannte Definition sagt:
@@ -380,6 +388,8 @@ Dass dies in der Theorie zwar einfach ist und stringent tönt, sich in der Praxi
 
 Es erscheint nun logisch, dass sich so eine Antragsstellung über Wochen hinziehen kann -- denn die Wahrscheinlichkeit, dass mehrere der bewilligungsverantwortlichen Personen abwesend sind, ist durchaus gegeben, sei es weil sich die Abwesenheitsvertretungs-Regeln im Normalfall ebenfalls an der Linienorganisation orientieren, oder weil es in der Natur von Arbeitenden in grossen Unternehmen liegt, dass sie ihre Ferien möglichst disjunkt zu den Ferien ihrer Vorgesetzten planen.
 
+Die Schulbuch-Lösung für diesen Fall wäre, ein entsprechendes SLO einzuführen. Dieses SLO müsste natürlich End-to-end funktionieren -- sprich die entsprechende Metrik müsste die Komplett-Durchlaufzeit von der Antragsstellung bis zur erfolgten Berechtigung des Antragsstellers in die entsprechende Applikation messen. Das Problem ist dann allerdings die Frage nach der Verantwortung bei einer Verletzung des SLO. Gemäss der Aufsetzung des Prozesses wären die beiden oben erwähnten Organisationslinien allesamt gleich verantwortlich. Da sie aber gemäss der Aufbauorganisation keine organisatorische Einheit bilden, sondern einen gerichteten Graphen, und erst noch in unterschiedlichen Kostenstellen angesiedelt sind, könnte die bei einer Verletzung des SLOs zu treffende Massnahme nur in der Reduktion der persönlichen Entlöhnung entweder aller am Prozess beteiligter oder (im Sinne von Komponenten-SLOs) derjenigen Person, die die Verzögerung verursacht hat. Dies müsste für die Verantwortlichkeits-Kette jeder einzelnen Applikation gemacht werden, was das Entlöhnungssystem des gesamten Unternehmens enorm kompliziert machen würde.
+
 \section{Auswirkungen von End-to-end Monitoring auf Outsourcing}
 
 Die Weiterentwicklung der Fähigkeiten der IT im Generellen hat viele neue Möglichkeiten gebracht, wie IT das Business direkt unterstützen und zur Wertschöpfungskette beitragen kann. Gemäss Forrester (\cite{forrester:slaBestPractices}) zeitigen sich daraus allerdings zwei sich widersprechende Effekte:
@@ -391,7 +401,14 @@ Die Weiterentwicklung der Fähigkeiten der IT im Generellen hat viele neue Mögl
 
 Die interne IT kann sich nun entweder dieses Konkurrenz- und Kostendrucks annehmen, sich auf den Einkauf von externen Services und deren Weitervermittlung an das Business konzentrieren, oder eine Mischform der ersten beiden anstreben.
 
-Alle drei Strategien setzen aber voraus, dass die IT ihre operationelle Struktur derer eines IT-Dienstleisters angleicht. Dafür braucht sie entsprechendes Qualitätsmanagement, um dem Business ihren Wert beweisen zu können.
+Alle drei Strategien setzen aber voraus, dass die interne IT ihre operationelle Struktur derer eines IT-Dienstleisters angleicht. Dafür braucht sie entsprechendes Qualitätsmanagement, um dem Business ihren Wert beweisen zu können.
+
+Auf der anderen Seite sind diejenigen IT-Dienstleister, welche bereits etabliert sind, aus folgenden Gründen nicht eben erpicht darauf, umfassendes End-to-end Monitoring einzuführen:
+
+\begin{itemize}
+\item Falls sie selber Teile ihrer Dienstleistungen wiederum an Drittanbieter ausgelagert haben, wären sie plötzlich voll verantwortlich für die gesamte Performance -- und falls sie selber kein umfassendes End-to-end Monitoring ihres angebotenen Services angeboten haben, hätten sie keine Chance, diese Verantwortung sinnvoll zu managen.
+\item Konkurrenzlosigkeit macht bequem. Die Neueinführung eines funktionierenden End-to-end Monitorings auf Seiten des Kunden (vielleicht sogar mit automatisierter Bedingungs-Verhandlung im Sinne der WSLAs) hätte eine grössere Transparenz zur Folge -- mit dem vielleicht unerwünschten Resultat, dass ein anderer Anbieter oder die interne IT-Abteilung des Kunden dieselbe Dienstleistung günstiger und mit höherer Qualität anbietet und es vorher einfach niemand gemerkt hat.
+\end{itemize}
 
 \chapter{Fazit}
 \label{fazit}
