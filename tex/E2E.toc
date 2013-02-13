@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {3.2}Service Level Objectives (SLOs)}{6}
 \contentsline {section}{\numberline {3.3}Metriken und Key Performance Indicators (KPIs)}{6}
 \contentsline {section}{\numberline {3.4}Web Service Level Agreements (WSLAs)}{8}
-\contentsline {section}{\numberline {3.5}Gestaltung von IT-Leistungskatalogen mit E2E}{15}
-\contentsline {section}{\numberline {3.6}Outsourcing: Auswirkungen von E2E}{15}
-\contentsline {chapter}{\numberline {4}Fazit}{16}
-\contentsline {chapter}{Abbildungsverzeichnis}{17}
-\contentsline {chapter}{Literaturverzeichnis}{18}
+\contentsline {section}{\numberline {3.5}Gestaltung von IT-Leistungskatalogen mit End-to-end Monitoring}{15}
+\contentsline {section}{\numberline {3.6}Auswirkungen von End-to-end Monitoring auf Outsourcing}{16}
+\contentsline {chapter}{\numberline {4}Fazit}{17}
+\contentsline {chapter}{Abbildungsverzeichnis}{18}
+\contentsline {chapter}{Literaturverzeichnis}{19}

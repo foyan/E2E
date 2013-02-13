@@ -195,7 +195,7 @@ Forrester (\cite{forrester:slaBestPractices}) sieht darum zwei kritische Bereich
 
 Bezüglich der Thematik der ständigen Verbesserung einer Service-Landschaft kann zu guter Letzt auch die Wahl der richtigen Berechnungsmethodik der Metriken beitragen. Beispielsweise kann der ganze Aufbau eines SLOs komplett sinnfrei sein, wenn die Performance-Ziele zu tief angesetzt sind. Wenn als Metrik einfach nur das arithmetische Mittel über eine gewisse Zeit herangezogen wird, könnte der Fall eintreten, dass auf dem Papier alle Ziele mit Bravour erfüllt werden -- Komplettausfälle der Systeme mit negativen Business-Folgen aber (vor allem wenn sie in zeitlich kritischen Phasen auftreten) drücken zwar den Schnitt ein bisschen nach oben, aber nicht so sehr, dass das SLA eine Reaktion gebieten würde.
 
-Forrester schlägt darum explizit die Implementierung der {\em Six-Sigma}-Methodik vor \cite{forrester:slaBestPractices, wiki:sixsigma}:
+Forrester schlägt darum explizit die Implementierung der {\em Six-Sigma}-Methodologie vor \cite{forrester:slaBestPractices, wiki:sixsigma}:
 \begin{enumerate}
 \item Anstelle eines einzigen Zielwerts sollen ein Zielwert $w_\textrm{Ziel}$, ein maximal tolerierbarer Wert $w_\textrm{max}$ sowie ein minimal tolerierbarer Wert $w_\textrm{min}$ definiert werden.
 \item Anstelle der simplen Berechnung des Durchschnitts der tatsächlich gemessenen Werte $w = \{w_1, w_2,\dots w_n\}$ sollen sowohl Durchschnitt
@@ -209,9 +209,9 @@ als auch Standardabweichung (\cite{wiki:stdev})
 berechnet werden.
 \item Es wird nun der Sigma-Faktor $x$ eingeführt, sodass
 \[
-x\sigma \ge \max\left\{w_\textrm{Ziel}-w_\textrm{min}, w_\textrm{max}-w_\textrm{Ziel} \right\}
+x\sigma \ge \min\left\{w_\textrm{Ziel}-w_\textrm{min}, w_\textrm{max}-w_\textrm{Ziel} \right\}
 \]
-gilt. Bei gegebener Normalverteilung der anfallenden Messwerte gibt $x$ Aufschluss über die Performance-Abweichung des Services (\cite{forrester:implementingBsm}); beispielsweise gilt für $x = 1$, dass $31\%$ aller Messwerte innerhalb der tolerierbaren Grenzen liegen, für $x = 6$ sind es bereits $99.99966\%$ (\cite{wiki:sixsigma}).\footnote{Diese Berechnung ist stark vereinfacht -- beispielsweise unterscheidet die Six-Sigma-Methodik noch zwischen kurzfristigen und langfristigen Resultaten. Ausserdem divergiert die Definition des Sigma-Faktors je nach Quelle massiv, mit entsprechenden Auswirkungen auf die Prozentzahl der tolerierbaren Messwerte. Der Autor möchte dies an dieser Stelle unkommentiert lassen und verweist auf Kapitel \ref{fazit}.}
+gilt. Bei gegebener Normalverteilung der anfallenden Messwerte gibt $x$ Aufschluss über die Performance-Abweichung des Services (\cite{forrester:implementingBsm}); beispielsweise gilt für $x = 1$, dass $31\%$ aller Messwerte innerhalb der tolerierbaren Grenzen liegen, für $x = 6$ sind es bereits $99.99966\%$ (\cite{wiki:sixsigma}).\footnote{Diese Berechnung ist stark vereinfacht -- beispielsweise unterscheidet die Six-Sigma-Methodologie noch zwischen kurzfristigen und langfristigen Resultaten. Ausserdem divergiert die Definition des Sigma-Faktors je nach Quelle massiv, mit entsprechenden Auswirkungen auf die Prozentzahl der tolerierbaren Messwerte. Der Autor möchte dies an dieser Stelle unkommentiert lassen und verweist auf Kapitel \ref{fazit}.}
 \end{enumerate}
 
 \section{Web Service Level Agreements (WSLAs)}
@@ -357,9 +357,30 @@ Die Sprache besteht aus folgenden drei Teilbereichen:
 \item[Obligations] Dieser Bereich spezifiziert diverse Garantien und Einschränkungen, welche für SLA-Parameter gegeben werden können. Dieser Bereich ist vor allem für den Condition-Evaluation-Service von Bedeutung.
 \end{description}
 
-\section{Gestaltung von IT-Leistungskatalogen mit E2E}
+\section{Gestaltung von IT-Leistungskatalogen mit End-to-end Monitoring}
 
-\section{Outsourcing: Auswirkungen von E2E}
+Ein IT-Leistungskatalog besteht grundsätzlich aus einer Liste von angebotenen Leistungen. Jede Leistung setzt sich zusammen aus:
+\begin{itemize}
+\item einer Beschreibung der Leistung,
+\item einem Zeitrahmen, der für die Erbringung der Leistung vorgesehen ist, oder einem SLA,
+\item einer Liste von Personen oder Gruppen, die dazu berechtigt sind, die Leistung zu beziehen,
+\item Kosten (wo anfallend),
+\item einer Beschreibung, wie die Leistung erbracht werden wird und was das Resultat sein wird. \cite{wiki:servicecatalog, FloresFineDuMoulin200703}
+\end{itemize}
+
+Interaktive Leistungskataloge erlauben das direkte Bestellen von Dienstleistungen \cite{troysblog, purdue}. Ein Benutzer kann beispielsweise einen neuen Laptop bestellen. Die Kosten dafür werden automatisch mit seiner Kostenstelle abgerechnet und ein entsprechender Beschaffungsprozess eingeleitet. Ausserdem wird der Benutzer darüber informiert, in welchem Stadium seine bezogene Dienstleistung steckt.
+
+Eine Überwachung im Sinne von End-to-end Monitoring ist vor allem auch für die im Leistungskatalog angebotenen Services sehr sinnvoll (für Forrester ist ein funktionierendes BPM und SLM inklusive Attribuierung von Metriken sogar Voraussetzung dafür, um überhaupt ein Leistungskatalog-Management einführen zu können \cite{stephenmann}). Damit ergäben sich beispielsweise folgende Möglichkeiten:
+\begin{itemize}
+\item Aus den gewonnenen historischen Metriken könnte die zu erwartende Zeit bis zum Abschluss des Prozesses vorausgesagt werden.
+\item Es könnten direkte Anreize geschaffen werden, um die Prozess-Durchlaufzeiten zu verringern (beispielsweise, indem im SLA vereinbart wird, dass die IT einen Teil der Kosten einer Beschaffung tragen muss, falls die IT-seitigen Teilprozesse zu langsam sind).
+\end{itemize}
+
+Dass dies in der Theorie zwar einfach ist und stringent tönt, sich in der Praxis aber doch komplexer präsentiert, soll das Beispiel eines grossen Unternehmens mit einer sehr dichten Applikationslandschaft veranschaulichen. Für diese Firma wurde ein Tool geschaffen, welches zentral verwendet wird, um die Berechtigungsprozesse für die verschiedenen Applikationen zu steuern und anzustossen. In diese Berechtigungsprozesse sind im Normalfall sehr viele unterschiedliche Personen involviert. Falls ein Mitarbeiter auf der untersten Organisationsebene eine Zulassung für eine Applikation beantragt, deren Business-Verantwortlicher nicht in demselben Teil der Aufbauorganisation zu Hause ist, geht der Prozess einige Stellen in der Linienorganisation nach oben, wobei jeder Supervisor dem Antrag zustimmen muss. Danach geht das Begehren in der Linie des Applikationsverantwortlichen wieder auf dieselbe Art nach unten.
+
+Es erscheint nun logisch, dass sich so eine Antragsstellung über Wochen hinziehen kann -- denn die Wahrscheinlichkeit, dass mehrere der bewilligungsverantwortlichen Personen abwesend sind, ist durchaus gegeben, sei es weil sich die Abwesenheitsvertretungs-Regeln im Normalfall ebenfalls an der Linienorganisation orientieren, oder weil es in der Natur von Arbeitenden in grossen Unternehmen liegt, dass sie ihre Ferien möglichst disjunkt zu den Ferien ihrer Vorgesetzten planen.
+
+\section{Auswirkungen von End-to-end Monitoring auf Outsourcing}
 
 Die Weiterentwicklung der Fähigkeiten der IT im Generellen hat viele neue Möglichkeiten gebracht, wie IT das Business direkt unterstützen und zur Wertschöpfungskette beitragen kann. Gemäss Forrester (\cite{forrester:slaBestPractices}) zeitigen sich daraus allerdings zwei sich widersprechende Effekte:
 

@@ -13,6 +13,15 @@
   prozessorientiertem Service Level Management (German Edition)}}.
 \newblock Springer, 2004 edition, 11 2003.
 
+\bibitem{troysblog}
+Troy DuMoulin.
+\newblock {Troy's Blog. The Hitch Hiker's Guide to the ITIL Galaxy and beyond.
+  IT Service Catalog Examples}.
+\newblock
+  \url{http://blogs.pinkelephant.com/index.php/troy/comments/it_service_catalog_examples/},
+  2010.
+\newblock [Online; Stand 12. Februar 2013].
+
 \bibitem{ibm:wslaSpec}
 {Heiko Ludwig et al.}
 \newblock {Web Service Level Agreement (WSLA) Language Specification}.
@@ -37,6 +46,26 @@
   \url{http://www.ktsl.com/downloads/forrester_bsm_definition_whitepaper.pdf},
   2006.
 \newblock [Online; Stand 11. Februar 2013].
+
+\bibitem{purdue}
+{Purdue University -- Information Technology}.
+\newblock {ITaP Service Catalog}.
+\newblock \url{http://www.itap.purdue.edu/service/catalog/}, 2013.
+\newblock [Online; Stand 12. Februar 2013].
+
+\bibitem{FloresFineDuMoulin200703}
+{Rodrigo Flores and Bill Fine and Troy DuMoulin}.
+\newblock {\em {Defining IT Success through the Service Catalog (Pink Elephant
+  Guides)}}.
+\newblock {Van Haren Publishing}, 1st edition, 3 2007.
+
+\bibitem{stephenmann}
+{Stephen Mann}.
+\newblock {Getting A Service Catalog: So Much More Than Buying A Tool!}
+\newblock
+  \url{http://blogs.forrester.com/stephen_mann/12-07-11-getting_a_service_catalog_so_much_more_than_buying_a_tool},
+  2012.
+\newblock [Online; Stand 12. Februar 2013].
 
 \bibitem{Stroebel00aframework}
 Michael Ströbel.
@@ -110,6 +139,14 @@ Wikipedia.
 \newblock {ebXML --- Wikipedia{,} The Free Encyclopedia}.
 \newblock
   \url{http://en.wikipedia.org/w/index.php?title=EbXML&oldid=531633145}, 2013.
+\newblock [Online; Stand 12. Februar 2013].
+
+\bibitem{wiki:servicecatalog}
+Wikipedia.
+\newblock {Service catalog --- Wikipedia{,} The Free Encyclopedia}.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Service_catalog&oldid=535123491},
+  2013.
 \newblock [Online; Stand 12. Februar 2013].
 
 \bibitem{wiki:sla}
