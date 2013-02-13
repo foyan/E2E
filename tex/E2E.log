@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  13 FEB 2013 09:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.27)  13 FEB 2013 09:35
 entering extended mode
 **C:/Code/E2E/tex/E2E.tex
 (C:/Code/E2E/tex/E2E.tex
@@ -727,26 +727,26 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  [5
 
 ] [6 <C:/Code/E2E/tex/biltli/forrester_bsm_slm.png>]
-Overfull \hbox (5.02005pt too wide) in paragraph at lines 200--202
+Overfull \hbox (5.02005pt too wide) in paragraph at lines 206--208
 []\OT1/cmr/m/n/10.95 Es hat sich ge-
  []
 
-
-Overfull \hbox (7.3318pt too wide) in paragraph at lines 209--211
+[7]
+Overfull \hbox (7.3318pt too wide) in paragraph at lines 215--217
 []\OT1/cmr/m/n/10.95 Bez[]uglich
  []
 
-[7]
-Overfull \hbox (2.6628pt too wide) in paragraph at lines 218--219
+
+Overfull \hbox (2.6628pt too wide) in paragraph at lines 224--225
 []\OT1/cmr/m/n/10.95 Die en-han-ced
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 221.
+(Font)              using `OT1/cmss/bx/n' instead on input line 227.
 
 [8]
-Overfull \hbox (1.11542pt too wide) in paragraph at lines 228--230
+Overfull \hbox (1.11542pt too wide) in paragraph at lines 234--236
 []\OT1/cmr/m/n/10.95 Aus die-sem Grund schla-gen die Au-to-ren von IBM ei-ner-s
 eits einen spe-zi-el-len Deploy-
  []
@@ -755,17 +755,17 @@ eits einen spe-zi-el-len Deploy-
 File: diagramme/wsla_context.pdf Graphic file (type pdf)
 
 <use diagramme/wsla_context.pdf>
-Package pdftex.def Info: diagramme/wsla_context.pdf used on input line 240.
+Package pdftex.def Info: diagramme/wsla_context.pdf used on input line 246.
 (pdftex.def)             Requested size: 404.70924pt x 297.91095pt.
 
 <diagramme/wsla_basic.pdf, id=43, 546.04pt x 441.65pt>
 File: diagramme/wsla_basic.pdf Graphic file (type pdf)
 
 <use diagramme/wsla_basic.pdf>
-Package pdftex.def Info: diagramme/wsla_basic.pdf used on input line 248.
+Package pdftex.def Info: diagramme/wsla_basic.pdf used on input line 254.
 (pdftex.def)             Requested size: 327.62653pt x 264.99203pt.
 
-Overfull \hbox (1.95343pt too wide) in paragraph at lines 256--257
+Overfull \hbox (1.95343pt too wide) in paragraph at lines 262--263
 []\OT1/cmr/m/n/10.95 Ein Ser-vice, wel-cher die Me-tri-ken der ver-schie-de-nen
  Mess-
  []
@@ -775,12 +775,12 @@ Overfull \hbox (1.95343pt too wide) in paragraph at lines 256--257
 File: diagramme/wsla_servicedesc.pdf Graphic file (type pdf)
 
 <use diagramme/wsla_servicedesc.pdf>
-Package pdftex.def Info: diagramme/wsla_servicedesc.pdf used on input line 269.
+Package pdftex.def Info: diagramme/wsla_servicedesc.pdf used on input line 275.
 
 (pdftex.def)             Requested size: 317.99043pt x 332.44456pt.
  [11 <C:/Code/E2E/tex/diagramme/wsla_basic.pdf>] [12 <C:/Code/E2E/tex/diagramme
 /wsla_servicedesc.pdf>] [13]
-Overfull \hbox (1.82285pt too wide) in paragraph at lines 330--331
+Overfull \hbox (1.82285pt too wide) in paragraph at lines 336--337
 []\OT1/cmr/m/n/10.95 Praktisch s[]amt-li-che Un-ter-neh-men ha-ben
  []
 
@@ -829,7 +829,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  7103 strings out of 494045
  105437 string characters out of 3149938
- 278845 words of memory out of 3000000
+ 279845 words of memory out of 3000000
  10296 multiletter control sequences out of 15000+200000
  12536 words of font info for 44 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -846,7 +846,7 @@ pe1/public/amsfonts/cm/cmsy10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmti10.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti9.pfb><C:/Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:
 /Programme/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on E2E.pdf (18 pages, 349835 bytes).
+Output written on E2E.pdf (18 pages, 350621 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
