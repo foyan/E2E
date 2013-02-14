@@ -101,7 +101,7 @@
 \title{End-to-end Monitoring (Vertiefung)}
 \subtitle{Seminar IT Service Management, ZHAW (Zürich)}
 \author{Florian Lüthi\footnote{\tt luethifl@students.zhaw.ch}}
-%\date{} % Activate to display a given date or no date (if empty),
+\date{13. Februar 2013} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
 
 \begin{document}
@@ -109,17 +109,21 @@
 
 \tableofcontents
 
-\chapter{Management Summary}
-
 \chapter{Einführung}
 
 Diese Seminararbeit ist Teil des Seminars {\em IT Service Management}, gehalten an der ZHAW Standort Zürich im Winter 2012/13. Die Arbeit beschäftigt sich mit dem Teilthema {\em End-to-end Monitoring: Vertiefung}. Das Ziel  ist, einen Überblick über End-to-end Monitoring von IT-Dienstleistungen vor allem aus Business-Sicht zu geben. Des weiteren soll mit Web Service Level Agreements (WSLA) eine Methode vorgestellt werden, wie sich die daraus abgeleiteten Themata und Methodiken grosso modo in komplett automatisierbare Systeme übertragen lässt.
 
 Die daraus resultierenden Fragestellungen und Aspekte sollen vor allem aus der Sichtweise der langfristig aufstrebenden klein- und mittelgrossen Firmen diskutiert werden.
 
-Die Arbeit ist wie folgt aufgebaut: Im vorhergehenden Kapitel wurde der gesamte Inhalt der Arbeit für ein Publikum in Eile zusammengefasst. Der Rest dieses Kapitels wiederum widmet sich der Einbettung der für die Arbeit relevanten Begrifflichkeiten (inklusive ihrer Definitionen) in ihren grösseren Kontext sowie der Ansetzung der Fragestellungen, welche die Arbeit zu beantworten im Sinne hat. Im Kapitel \ref{methodiken} wird auf einige gängige und zukünftige Methodiken eingegangen, bevor schliesslich im Kapitel \ref{fazit} versucht wird, eine Antwort auf die Fragestellungen zu geben oder aber ihre Nichtbeantwortbarkeit aufgezeigt wird. Ausserdem wird ebenda noch ein kurzes Fazit gezogen.
+Die Arbeit ist wie folgt aufgebaut: Der Rest dieses Kapitels widmet sich der Einbettung der für die Arbeit relevanten Begrifflichkeiten (inklusive ihrer Definitionen) in ihren grösseren Kontext sowie der Ansetzung der Fragestellungen, welche die Arbeit zu beantworten im Sinne hat. Im Kapitel \ref{methodiken} wird auf einige gängige und zukünftige Methodiken eingegangen, bevor schliesslich im Kapitel \ref{fazit} versucht wird, eine Antwort auf die Fragestellungen zu geben oder aber ihre Nichtbeantwortbarkeit aufgezeigt wird. Ausserdem wird ebenda noch ein kurzes Fazit gezogen.
+
+\section{Abgrenzung}
 
 Auf das Vorstellen eines konkreten Tools wurde bewusst verzichtet, weil dies den Rahmen dieser Arbeit sowohl in Punkto Umfang als auch in Punkto Voraussetzungen bei weitem gesprengt hätte -- ohne vorzugreifen, sei doch jetzt schon verraten, dass End-to-end Monitoring nur dann Sinn macht, wenn sowohl funktionierendes Business Service Management als auch Service Level Management in einer Unternehmung schon aufgezogen ist (was dem Autor beides nicht zur Verfügung steht).
+
+Der technischen Teil der Monitoring-Thematik wird von einer anderen Arbeit innerhalb desselben Seminars behandelt.
+
+\section{Literatur}
 
 Da die ganze Thematik einerseits noch relativ jung und andererseits ein beliebtes Tummelfeld für Consulting-Dienstleister aller Art ist, ist die Situation der verfügbaren (akademischen und nichtakademischen) Literatur gelinde gesagt dürftig. Die dieser Arbeit zu Grunde liegende Literatur wurde darum vor allem durch Online-Recherche zusammengetragen. Für den technischen Teil lag das Hauptaugenmerk auf der WSLA-Spezifikation sowie der zugehörigen Publikation der Firma IBM \cite{ibm:wslaSpec, ibm:wslaPaper}, für den Business-Teil zu einem grossen Teil auf Publikationen von Forrester Research, Inc \cite{forrester:bsm, forrester:implementingBsm, forrester:slaBestPractices, stephenmann}, welche absichtlich nur im Kapitel \ref{fazit} kritisch hinterfragt werden.
 
@@ -420,12 +424,45 @@ Auf der anderen Seite sind diejenigen IT-Dienstleister, welche bereits etabliert
 \item Konkurrenzlosigkeit macht bequem. Die Neueinführung eines funktionierenden End-to-end Monitorings auf Seiten des Kunden (vielleicht sogar mit automatisierter Bedingungs-Verhandlung im Sinne der WSLAs) hätte eine grössere Transparenz zur Folge -- mit dem vielleicht unerwünschten Resultat, dass ein anderer Anbieter oder die interne IT-Abteilung des Kunden dieselbe Dienstleistung günstiger und mit höherer Qualität anbietet und es vorher einfach niemand gemerkt hat.
 \end{itemize}
 
-\chapter{Fazit}
+\chapter{Schlussfolgerungen}
 \label{fazit}
 
 \section{Beantwortung der Fragestellungen}
 
-\section{Résumé}
+\begin{description}
+\item[Transparenz versus Transformabilität]
+
+Grundsätzlich kann konstatiert werden, dass bei einem logischen Aufbau der Business-Prozesse, einem funktionierenden Configuration Management und einem sauber arbeitenden Service Level Management die Transparenz natürlich ultimativ ist. Bei grossen Unternehmen werden alle diese Voraussetzungen aber niemals gegeben sein -- siehe \cite{skeptic}. Bei kleinen Unternehmen lohnt sich wahrscheinlich der Aufwand nicht.
+
+Unternehmen haben des weiteren die Tendenz, mit grossem Aufwand erreichte Transparenz durch enorm rigide Change Management-Prozesse zu schützen. Dies schlägt sich direkt in einer niedrigen Transformabilität nieder. Was dann passiert, ist offensichtlich: Es werden Umgehungslösungen gesucht -- und bewusst oder unbewusst in Kauf genommen, dass die Transparenz darunter leidet.
+
+Eine mögliche Lösung wäre ein System und/oder eine Methodik, die folgende Kernparadigmen aufweist:
+\begin{description}
+\item[Prozess-Prototyping] Prozesse können sehr einfach mit einer 4G-Sprache beschrieben werden. Es wäre problemlos möglich, eine etablierte Programmiersprache wie beispielsweise Java mit einer entsprechenden Klassenbibliothek zu verwenden (mit dem Vorteil, dass ein guter Programmierer sowie ein analytisch begabter Vertreter des Business einen oder mehrere teure Consultants aufwiegen würden). Wichtig ist, dass diese Sprache Turing-universell ist -- ansonsten wird es zwangsläufig Fälle von Prozessen geben, die nicht abgebildet werden können.
+\item[Continuous Deployment] Die so entwickelten Prozesse können ohne bürokratische Friktionen innerhalb von Sekunden in die produktive Prozess-Landschaft ausgerollt werden. Das System müsste so funktionieren, dass es verschiedene Prototyp-Stadien desselben Prozesses parallel verwalten kann.
+\item[Agiles Management der Metriken] Wichtig bei Metriken ist die Korrelation untereinander. Da schon einfache Prozesse Metriken generieren können, die sich entweder widersprechen oder deren Korrelation bei einem {\em top-down}-Ansatz während der Definition nicht sichtbar ist, muss das Ein- und Ausschalten sowie das Rekombinieren von Metriken für das System eine intrinsische Aktion sein. Wichtig ist, dass dies keine Management-, sondern eine Benutzer-Aktion ist.
+\end{description}
+
+Leider weist keiner der im vorhergehenden Kapitel besprochenen Ansätze diese Eigenschaften auf.
+
+\item[Skalierbarkeit nach unten] Die Antwort auf die Frage der Nach-Unten-Skalierung bezüg\-lich der von Forrester vorgeschlagenen Six-Sigma-Methodologie zur Berechnung der Metriken lässt sich mit einem kategorischen {\em Nein} beantworten -- und zwar schlichtweg basierend auf dem Faktum, dass für die korrekte Anwendung der Methodologie ein oder mehrere {\em (Master) Black Belts} vonnöten ist/sind \cite{wiki:sixsigma} -- also Personen, die sich innerhalb des Unternehmens mit nichts anderem als der korrekten Anwendung der Methodologie beschäftigen. Dies ist für kleine Firmen im besten Fall nicht finanzierbar und im schlechtesten Fall ein in der Totalen höherer Aufwand als mit komplett ungemanagten Prozessen.
+
+Das Konzept der WSLAs könnte natürlich eine Lösung sein. Denkbar wäre hier vor allem auch, hinter den Web-Services menschliche Aktoren zu platzieren -- so könnten beispielsweise die Buchhaltungs- oder HR-Prozesse einer Kleinfirma outgesourced werden. Momentan wird dies primär an zwei Dingen scheitern:
+\begin{enumerate}
+\item Die Verbreitung von WSLA ist sehr gering; es scheint keine einzige relevante markttaugliche Implementation zu geben. Die Ursache dafür dürfte die trotz allem nicht zu unterschätzende technische Komplexität sein.
+\item Die Business-technische Komplexität ist praktisch unmöglich zu bewältigen: Wenn beispielsweise das Lohnwesen einer Firma ausgelagert werden soll, muss das (W)SLA natürlich Objectives über die Qualität (Korrektheit, Nachvollziehbarkeit, Legalität usw.) beinhalten. Diese qualitativen Metriken sind schlussendlich nur erhebbar, indem die einzelnen Buchungen, Auszahlungen undsoweiter vom Auftraggeber selber überprüft werden -- was das ganze Konzept ad absurdum führt, weil dann für die Kontrolle gleich viel oder mehr Aufwand als für das komplette selbständige Durchführen des Prozesses getätigt werden muss.
+\end{enumerate}
+
+Die Überprüfung der von Forrester vorgeschlagenen Methodiken bezüglich Business Service Management und Service Level Management schliesslich ergibt keine eindeutige Aussage. Allerdings sehen die Herausgeber selber ihr Hauptpublikum schon eher in den {\em one billion-plus companies}, wie sie selber bei jeder Gelegenheit schreiben.
+
+\end{description}
+
+
+\section{Fazit}
+
+Der Autor (und wahrscheinlich auch der Leser) beendet diese Arbeit mit gemischten Gefühlen. Einerseits ist die Untersuchung der vorgestellten Methodiken sehr spannend, und grundsätzlich scheint die Entwicklung in die richtige Richtung zu gehen: es wird eine engere Verknüpfung von Business und IT angestrebt, und das ist immer als positiv zu bewerten. Auf der anderen Seite wird natürlich das Ur-Problem von jeder Art Managements sichtbar: dem stetigen Streben nach ultimativer normativer Definitionsmacht. Das Resultat für die Welt sind wieder ein paar Abkürzungen mehr.
+
+Wie oben dargelegt, sind die vorgestellten Methodiken in ihrer momentanen Form für kleine Unternehmen nur sehr bedingt oder gar nicht nutzbringend. Der Autor mag darum kleine Firmen dazu anregen, ihre Lösungen für derartige Probleme eher in den Methoden der modernen Software-Entwicklung zu suchen: agiles Projekt-Management, Prozess-Prototyping sowie Continuous Deployment (stetiges Applizieren von Änderungen). Vielleicht wird der Markt in einigen Jahren die entsprechenden Tools dazu bereithalten.
 
 \listoffigures
 
